@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Espace Administrateur</h3>
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Nom</th>
+            <th>Rôle</th>
+            <th>Statut</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.name or '-' }}</td>
+            <td>
+                <span class="badge {% if user.role == 'admin' %}bg-danger{% else %}bg-primary{% endif %}">{{ user.role }}</span>
+            </td>
+            <td>
+                <span class="badge {% if user.is_active %}bg-success{% else %}bg-secondary{% endif %}">
+                    {% if user.is_active %}Actif{% else %}Inactif{% endif %}
+                </span>
+            </td>
+            <td>
+                {% if user.id != current_user.id %}
+                    <a href="{{ url_for('toggle_role', id=user.id) }}" class="btn btn-sm btn-warning">Changer Rôle</a>
+                    <a href="{{ url_for('toggle_status', id=user.id) }}" class="btn btn-sm {% if user.is_active %}btn-danger{% else %}btn-success{% endif %}">
+                        {% if user.is_active %}Désactiver{% else %}Activer{% endif %}
+                    </a>
+                {% else %}
+                    <span class="text-muted">Vous-même</span>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

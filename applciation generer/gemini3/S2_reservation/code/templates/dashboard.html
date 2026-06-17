@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Mes Réservations</h2>
+<h4 class="mt-4">À venir</h4>
+<table class="table table-striped">
+    <tr><th>Salle</th><th>Date</th><th>Début</th><th>Fin</th></tr>
+    {% for r in future %}
+    <tr><td>{{ r.room.name }}</td><td>{{ r.date.strftime('%d/%m/%Y') }}</td><td>{{ r.start_time.strftime('%H:%M') }}</td><td>{{ r.end_time.strftime('%H:%M') }}</td></tr>
+    {% else %}<tr><td colspan="4">Aucune réservation à venir.</td></tr>{% endfor %}
+</table>
+
+<h4 class="mt-4">Passées</h4>
+<table class="table table-secondary">
+    <tr><th>Salle</th><th>Date</th><th>Début</th><th>Fin</th></tr>
+    {% for r in past %}
+    <tr><td>{{ r.room.name }}</td><td>{{ r.date.strftime('%d/%m/%Y') }}</td><td>{{ r.start_time.strftime('%H:%M') }}</td><td>{{ r.end_time.strftime('%H:%M') }}</td></tr>
+    {% else %}<tr><td colspan="4">Aucune réservation passée.</td></tr>{% endfor %}
+</table>
+{% endblock %}

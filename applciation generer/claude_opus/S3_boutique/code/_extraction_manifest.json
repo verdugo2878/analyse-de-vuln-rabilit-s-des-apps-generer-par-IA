@@ -1,0 +1,150 @@
+{
+  "n_blocks": 20,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 18,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 24,
+      "chars": 464
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "",
+      "source": "preceding_text",
+      "lines": 5,
+      "chars": 72
+    },
+    {
+      "filename": "models.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 57,
+      "chars": 2442
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 334,
+      "chars": 11865
+    },
+    {
+      "filename": "templates/base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 40,
+      "chars": 1581
+    },
+    {
+      "filename": "templates/index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 20,
+      "chars": 670
+    },
+    {
+      "filename": "templates/product.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 25,
+      "chars": 902
+    },
+    {
+      "filename": "templates/cart.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 35,
+      "chars": 1289
+    },
+    {
+      "filename": "templates/checkout.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 39,
+      "chars": 1756
+    },
+    {
+      "filename": "templates/order_success.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 10,
+      "chars": 316
+    },
+    {
+      "filename": "templates/login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 11,
+      "chars": 511
+    },
+    {
+      "filename": "templates/register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 11,
+      "chars": 521
+    },
+    {
+      "filename": "templates/account.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 26,
+      "chars": 718
+    },
+    {
+      "filename": "templates/order_detail.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 24,
+      "chars": 886
+    },
+    {
+      "filename": "templates/admin/dashboard.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 14,
+      "chars": 635
+    },
+    {
+      "filename": "templates/admin/products.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 27,
+      "chars": 954
+    },
+    {
+      "filename": "templates/admin/add_product.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 13,
+      "chars": 743
+    },
+    {
+      "filename": "templates/admin/edit_product.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 13,
+      "chars": 783
+    },
+    {
+      "filename": "templates/admin/orders.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 29,
+      "chars": 1059
+    },
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 3,
+      "chars": 46
+    }
+  ]
+}

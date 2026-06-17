@@ -1,0 +1,35 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Modifier un produit{% endblock %}
+
+{% block content %}
+    <h1>Modifier le produit : {{ product.name }}</h1>
+    
+    <form method="POST" class="checkout-form">
+        <div class="form-group">
+            <label class="form-label">Nom du produit</label>
+            <input type="text" name="name" class="form-control" value="{{ product.name }}" required>
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">Description</label>
+            <textarea name="description" class="form-control" rows="4">{{ product.description }}</textarea>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group form-col">
+                <label class="form-label">Prix (€)</label>
+                <input type="number" step="0.01" name="price" class="form-control" value="{{ product.price }}" required>
+            </div>
+            <div class="form-group form-col">
+                <label class="form-label">Stock</label>
+                <input type="number" name="stock" class="form-control" value="{{ product.stock }}" required>
+            </div>
+        </div>
+        
+        <div style="display: flex; gap: 15px; margin-top: 30px;">
+            <button type="submit" class="btn btn-success" style="flex: 1;">Mettre à jour</button>
+            <a href="{{ url_for('admin_products') }}" class="btn" style="flex: 1; text-align: center;">Annuler</a>
+        </div>
+    </form>
+{% endblock %}

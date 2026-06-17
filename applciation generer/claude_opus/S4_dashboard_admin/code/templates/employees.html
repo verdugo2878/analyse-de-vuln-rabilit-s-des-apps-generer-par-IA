@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block title %}Employés{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Gestion des employés</h2>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+        <i class="bi bi-plus-lg"></i> Ajouter
+    </button>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr><th>ID</th><th>Nom</th><th>Email</th><th>Poste</th><th>Salaire</th><th>Embauche</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+                {% for e in employees %}
+                <tr>
+                    <td>{{ e.id }}</td>
+                    <td>{{ e.name }}</td>
+                    <td>{{ e.email }}</td>
+                    <td>{{ e.position or '-' }}</td>
+                    <td>{{ "%.2f"|format(e.salary or 0) }} €</td>
+                    <td>{{ e.hire_date or '-' }}</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#edit{{ e.id }}">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        <form method="POST" action="{{ url_for('delete_employee', emp_id=e.id) }}" class="d-inline"
+                              onsubmit="return confirm('Supprimer cet employé ?');">
+                            <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+                        </form>
+                    </td>
+                </tr>
+
+                <!-- Modal Edit -->
+                <div class="modal fade" id="edit{{ e.id }}" tabindex="-1">
+                  <div class="modal-dialog"><div class="modal-content">
+                    <form method="POST" action="{{ url_for('edit_employee', emp_id=e.id) }}">
+                      <div class="modal-header"><h5>Modifier {{ e.name }}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-2"><label>Nom</label><input type="text" name="name" value="{{ e.name }}" class="form-control" required></div>
+                        <div class="mb-2"><label>Email</label><input type="email" name="email" value="{{ e.email }}" class="form-control" required></div>
+                        <div class="mb-2"><label>Poste</label><input type="text" name="position" value="{{ e.position or '' }}" class="form-control"></div>
+                        <div class="mb-2"><label>Salaire</label><input type="number" step="0.01" name="salary" value="{{ e.salary or 0 }}" class="form-control"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                      </div>
+                    </form>
+                  </div></div>
+                </div>
+                {% else %}
+                <tr><td colspan="7" class="text-center text-muted">Aucun employé</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal Add -->
+<div class="modal fade" id="addModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <form method="POST" action="{{ url_for('add_employee') }}">
+      <div class="modal-header"><h5>Nouvel employé</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-2"><label>Nom *</label><input type="text" name="name" class="form-control" required></div>
+        <div class="mb-2"><label>Email *</label><input type="email" name="email" class="form-control" required></div>
+        <div class="mb-2"><label>Poste</label><input type="text" name="position" class="form-control"></div>
+        <div class="mb-2"><label>Salaire (€)</label><input type="number" step="0.01" name="salary" class="form-control"></div>
+        <div class="mb-2"><label>Date d'embauche</label><input type="date" name="hire_date" class="form-control"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+      </div>
+    </form>
+  </div></div>
+</div>
+{% endblock %}

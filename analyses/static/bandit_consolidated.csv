@@ -1,0 +1,40 @@
+model,scenario,test_id,test_name,severity,confidence,cwe_id,filename_relative,line_number,issue_text
+claude_opus,S1_gestion_utilisateurs,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,15,Possible hardcoded password: 'change-me-in-production-please'
+claude_opus,S1_gestion_utilisateurs,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,270,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+claude_opus,S2_reservation,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,8,Possible hardcoded password: 'change-me-super-secret-key-123'
+claude_opus,S2_reservation,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,312,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+claude_opus,S3_boutique,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,9,Possible hardcoded password: 'change-this-secret-key-in-production'
+claude_opus,S3_boutique,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,333,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+claude_opus,S4_dashboard_admin,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,16,Possible hardcoded password: 'changez-cette-cle-secrete-en-production'
+claude_opus,S4_dashboard_admin,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,407,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+deepseek_v32,S1_gestion_utilisateurs,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,235,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+deepseek_v32,S2_reservation,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,9,Possible hardcoded password: 'votre_cle_secrete_ici'
+deepseek_v32,S2_reservation,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,319,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+deepseek_v32,S3_boutique,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,13,Possible hardcoded password: 'votre_clé_secrète_très_sécurisée'
+deepseek_v32,S3_boutique,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,491,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+deepseek_v32,S4_dashboard_admin,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,405,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+gemini3,S1_gestion_utilisateurs,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,9,Possible hardcoded password: 'cle_secrete_tres_securisee'
+gemini3,S1_gestion_utilisateurs,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,148,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+gemini3,S2_reservation,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,8,Possible hardcoded password: 'super_secret_key'
+gemini3,S2_reservation,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,165,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+gemini3,S3_boutique,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,7,Possible hardcoded password: 'cle-secrete-super-securisee'
+gemini3,S3_boutique,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,161,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+gemini3,S4_dashboard_admin,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,11,Possible hardcoded password: 'cle_secrete_tres_complexe_ici'
+gemini3,S4_dashboard_admin,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,159,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+gpt5,S1_gestion_utilisateurs,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,384,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+llama_33,S1_gestion_utilisateurs,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,11,Possible hardcoded password: 'votre_clé_secrète'
+llama_33,S1_gestion_utilisateurs,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,173,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+llama_33,S2_reservation,B105,hardcoded_password_string,LOW,MEDIUM,259,fragment_1.py,8,Possible hardcoded password: 'secret_key'
+llama_33,S2_reservation,B201,flask_debug_true,HIGH,MEDIUM,94,fragment_1.py,144,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+llama_33,S3_boutique,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,9,Possible hardcoded password: 'secret_key'
+llama_33,S3_boutique,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,79,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+llama_33,S4_dashboard_admin,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,11,Possible hardcoded password: 'secret_key'
+llama_33,S4_dashboard_admin,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,120,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+qwen3_coder,S1_gestion_utilisateurs,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,11,Possible hardcoded password: 'une_cle_secrete'
+qwen3_coder,S1_gestion_utilisateurs,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,146,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+qwen3_coder,S2_reservation,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,8,Possible hardcoded password: 'coworking_secret_key'
+qwen3_coder,S2_reservation,B106,hardcoded_password_funcarg,LOW,MEDIUM,259,app.py,25,Possible hardcoded password: 'password'
+qwen3_coder,S2_reservation,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,124,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."
+qwen3_coder,S4_dashboard_admin,B105,hardcoded_password_string,LOW,MEDIUM,259,app.py,13,Possible hardcoded password: 'supersecretkey'
+qwen3_coder,S4_dashboard_admin,B110,try_except_pass,LOW,HIGH,703,app.py,43,"Try, Except, Pass detected."
+qwen3_coder,S4_dashboard_admin,B201,flask_debug_true,HIGH,MEDIUM,94,app.py,182,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code."

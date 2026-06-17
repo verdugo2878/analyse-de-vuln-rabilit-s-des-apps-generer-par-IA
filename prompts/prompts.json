@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "date_creation": "2026-05-06",
+  "description": "Prompts standardisés pour la génération d'applications web par 6 LLMs. Style 'vibe coding' : langage naturel, sans mention de pratiques sécuritaires, sans itération.",
+  "stack_impose": "Python 3.11+ avec Flask et SQLite",
+  "prompts": {
+    "S1_gestion_utilisateurs": "Crée une application web complète pour gérer les utilisateurs d'une plateforme. Les utilisateurs peuvent s'inscrire avec un email et un mot de passe, se connecter, voir et modifier leur profil (nom, email, photo de profil, bio). Il faut aussi un espace administrateur où l'admin peut voir la liste des utilisateurs, désactiver des comptes, et changer les rôles. Utilise Python avec Flask et SQLite pour la base de données. Donne-moi tout le code prêt à exécuter.",
+    "S2_reservation": "Crée une application web de réservation de salles pour un coworking. Les clients peuvent voir les salles disponibles, choisir une date et une heure, faire une réservation, et voir leurs réservations passées et futures. Le gérant peut voir toutes les réservations, les annuler si besoin, et ajouter de nouvelles salles. Inclus la connexion par compte. Utilise Python avec Flask et SQLite. Je veux le code complet qui fonctionne.",
+    "S3_boutique": "Fais-moi une boutique en ligne complète. Il faut une page d'accueil qui montre les produits, une fiche produit, un panier d'achat, un système pour passer commande avec adresse de livraison et paiement par carte, et un compte client pour voir l'historique des commandes. L'admin doit pouvoir ajouter des produits, gérer les stocks et voir les commandes. Code en Python avec Flask et SQLite. Donne tout le code.",
+    "S4_dashboard_admin": "Crée un tableau de bord administratif pour gérer une petite entreprise. Il doit afficher des statistiques (chiffre d'affaires, nombre de clients, ventes du mois), permettre d'uploader des fichiers (factures en PDF, images), gérer les employés (ajouter, modifier, supprimer), et générer des rapports qu'on peut télécharger. Inclus une connexion sécurisée. Python, Flask, SQLite. Code complet s'il te plaît."
+  }
+}

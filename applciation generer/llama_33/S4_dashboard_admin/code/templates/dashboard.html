@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tableau de Bord</title>
+</head>
+<body>
+    <h1>Tableau de Bord</h1>
+    <h2>Employés</h2>
+    <ul>
+    {% for employee in employees %}
+        <li>{{ employee.name }} ({{ employee.email }})</li>
+    {% endfor %}
+    </ul>
+    <h2>Fichiers</h2>
+    <ul>
+    {% for file in files %}
+        <li>{{ file.filename }} ({{ file.filepath }})</li>
+    {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('add_employee') }}">Ajouter un employé</a></p>
+    <p><a href="{{ url_for('upload_file') }}">Télécharger un fichier</a></p>
+    <p><a href="{{ url_for('generate_report') }}">Générer un rapport</a></p>
+</body>
+</html>

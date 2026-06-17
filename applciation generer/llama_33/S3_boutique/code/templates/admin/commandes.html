@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Commandes</h1>
+  <ul>
+    {% for commande in commandes %}
+      <li>
+        {{ commande.date }} - {{ commande.total }} €
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,10 @@
+/boutique
+│── app.py
+└── /templates
+    ├── base.html
+    ├── index.html
+    ├── produit.html
+    ├── panier.html
+    ├── commande.html
+    ├── compte.html
+    └── admin.html

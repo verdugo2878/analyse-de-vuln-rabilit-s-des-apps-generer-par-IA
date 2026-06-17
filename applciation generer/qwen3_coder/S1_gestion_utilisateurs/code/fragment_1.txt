@@ -1,0 +1,16 @@
+user_management/
+├── app.py
+├── models.py
+├── forms.py
+├── requirements.txt
+├── static/
+│   └── uploads/         # Pour les photos de profil
+└── templates/
+    ├── base.html
+    ├── index.html
+    ├── login.html
+    ├── register.html
+    ├── profile.html
+    ├── edit_profile.html
+    ├── admin_dashboard.html
+    └── admin_edit_user.html

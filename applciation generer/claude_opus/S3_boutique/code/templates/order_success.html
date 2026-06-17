@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="alert alert-success">
+  <h1>✅ Commande confirmée !</h1>
+  <p>Numéro de commande : #{{ order.id }}</p>
+  <p>Total : {{ "%.2f"|format(order.total) }} €</p>
+</div>
+<a href="{{ url_for('account') }}" class="btn btn-primary">Voir mes commandes</a>
+{% endblock %}

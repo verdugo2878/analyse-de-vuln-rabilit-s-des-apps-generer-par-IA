@@ -1,0 +1,80 @@
+{
+  "n_blocks": 10,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 8,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 14,
+      "chars": 298
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "txt",
+      "source": "preceding_text",
+      "lines": 4,
+      "chars": 46
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 408,
+      "chars": 14326
+    },
+    {
+      "filename": "templates/base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 59,
+      "chars": 2622
+    },
+    {
+      "filename": "templates/login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 28,
+      "chars": 1343
+    },
+    {
+      "filename": "templates/dashboard.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 61,
+      "chars": 2007
+    },
+    {
+      "filename": "templates/employees.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 87,
+      "chars": 4594
+    },
+    {
+      "filename": "templates/files.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 52,
+      "chars": 2285
+    },
+    {
+      "filename": "templates/reports.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 39,
+      "chars": 1586
+    },
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 3,
+      "chars": 46
+    }
+  ]
+}

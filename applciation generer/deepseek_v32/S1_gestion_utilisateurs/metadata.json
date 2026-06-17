@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "deepseek_v32",
+  "model_id": "deepseek/deepseek-v3.2",
+  "scenario": "S1_gestion_utilisateurs",
+  "timestamp_utc": "2026-05-06T17:00:08.172717+00:00",
+  "elapsed_seconds": 131.45,
+  "tokens_input": 122,
+  "tokens_output": 11100,
+  "reasoning_tokens": 0,
+  "finish_reason": "stop",
+  "cost_usd_estimated": 0.012243,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": false,
+  "response_length_chars": 49925
+}

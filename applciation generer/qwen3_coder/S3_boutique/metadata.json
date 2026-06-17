@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "qwen3_coder",
+  "model_id": "qwen/qwen3-coder",
+  "scenario": "S3_boutique",
+  "timestamp_utc": "2026-05-06T17:44:31.341748+00:00",
+  "elapsed_seconds": 163.13,
+  "tokens_input": 106,
+  "tokens_output": 12949,
+  "reasoning_tokens": 0,
+  "finish_reason": "stop",
+  "cost_usd_estimated": 0.064851,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": false,
+  "response_length_chars": 51853
+}

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Gestion des réservations - Coworking Space{% endblock %}
+
+{% block content %}
+<h1 class="mb-4"><i class="fas fa-user-shield me-2"></i>Gestion des réservations</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="mb-0">Toutes les réservations</h5>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Utilisateur</th>
+                        <th>Salle</th>
+                        <th>Date et heure</th>
+                        <th>Durée</th>
+                        <th>Statut</th>
+                        <th>Créée le</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for booking in bookings %}
+                    <tr>
+                        <td>{{ booking.id }}</td>
+                        <td>{{ booking.username }}<br><small>{{ booking.email }}</small></td>
+                        <td>{{ booking.room_name }}</td>
+                        <td class="format-date">{{ booking.start_time }}</td>
+                        <td>
+                            {% set duration = ((booking.end_time|string|to_datetime) - (booking.start_time|string|to_datetime)).seconds // 3600 %}
+                            {{ duration }}h
+                        </td>
+                        <td>
+                            {% if booking.status == 'confirmed' %}
+                                <span class="badge bg-success">Confirmée</span>
+                            {% elif booking.status == 'cancelled' %}
+                                <span class="badge bg-danger">Annulée</span>
+                            {% else %}
+                                <span class="badge bg-warning">{{ booking.status }}</span>
+                            {% endif %}
+                        </td>
+                        <td class="format-date">{{ booking.created_at }}</td>
+                        <td>
+                            {% if booking.status == 'confirmed' and booking.start_time|string|to_datetime > now %}
+                                <a href="{{ url_for('cancel_booking', booking_id=booking.id) }}" 
+                                   class="btn btn-sm btn-danger cancel-booking">
+                                    <i class="fas fa-times me-1"></i>Annuler
+                                </a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

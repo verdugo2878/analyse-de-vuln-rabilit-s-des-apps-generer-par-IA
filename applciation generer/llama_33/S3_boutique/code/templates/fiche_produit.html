@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ produit.nom }}</h1>
+  <p>{{ produit.description }}</p>
+  <p>Prix : {{ produit.prix }} €</p>
+  <p>Stock : {{ produit.stock }}</p>
+  <a href="{{ url_for('panier') }}">Ajouter au panier</a>
+{% endblock %}

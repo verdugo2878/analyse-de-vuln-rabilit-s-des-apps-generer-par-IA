@@ -1,0 +1,29 @@
+boutique_en_ligne/
+│
+├── app.py
+├── database.py
+├── models.py
+├── requirements.txt
+│
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── product.html
+│   ├── cart.html
+│   ├── checkout.html
+│   ├── order_confirmation.html
+│   ├── login.html
+│   ├── register.html
+│   ├── account.html
+│   ├── admin.html
+│   ├── admin_products.html
+│   ├── admin_orders.html
+│   └── admin_add_product.html
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│
+└── instance/
+    └── boutique.db

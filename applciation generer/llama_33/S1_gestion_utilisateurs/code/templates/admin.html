@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+</head>
+<body>
+    <h1>Admin</h1>
+    <ul>
+    {% for utilisateur in utilisateurs %}
+        <li>{{ utilisateur.nom }} ({{ utilisateur.email }}) - 
+            <a href="{{ url_for('desactiver', user_id=utilisateur.id) }}">Désactiver</a> | 
+            <a href="{{ url_for('activer', user_id=utilisateur.id) }}">Activer</a> | 
+            <a href="{{ url_for('changerole', user_id=utilisateur.id) }}">Changer rôle</a>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

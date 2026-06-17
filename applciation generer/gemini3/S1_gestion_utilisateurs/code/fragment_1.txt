@@ -1,0 +1,12 @@
+mon_projet/
+│
+├── app.py
+├── requirements.txt
+├── static/
+│   └── uploads/        (Les photos de profil iront ici)
+└── templates/
+    ├── base.html
+    ├── login.html
+    ├── register.html
+    ├── profile.html
+    └── admin.html

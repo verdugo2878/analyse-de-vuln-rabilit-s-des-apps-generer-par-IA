@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Panier - Boutique en Ligne{% endblock %}
+
+{% block content %}
+    <h1>Votre panier</h1>
+    
+    {% if cart_items %}
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix unitaire</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in cart_items %}
+                    <tr>
+                        <td>
+                            <strong>{{ item.product.name }}</strong>
+                            <br>
+                            <small>{{ item.product.description[:50] }}...</small>
+                        </td>
+                        <td>{{ "%.2f"|format(item.product.price) }} €</td>
+                        <td>
+                            <form method="POST" action="{{ url_for('update_cart') }}" style="display: inline;">
+                                <input type="hidden" name="product_id" value="{{ item.product.id }}">
+                                <input type="number" name="quantity" value="{{ item.quantity }}" min="1" max="{{ item.product.stock }}" class="quantity-input">
+                                <button type="submit" class="btn" style="padding: 5px 10px; font-size: 0.9rem;">Mettre à jour</button>
+                            </form>
+                        </td>
+                        <td>{{ "%.2f"|format(item.total) }} €</td>
+                        <td>
+                            <a href="{{ url_for('remove_from_cart', product_id=item.product.id) }}" class="btn btn-danger" style="padding: 5px 10px; font-size: 0.9rem;">Supprimer</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <div class="cart-summary">
+            <div class="cart-total">
+                Total : {{ "%.2f"|format(total) }} €
+            </div>
+            <a href="{{ url_for('checkout') }}" class="btn btn-success" style="padding: 15px 30px; font-size: 1.1rem;">Passer commande</a>
+            <a href="{{ url_for('index') }}" class="btn" style="margin-left: 10px;">Continuer les achats</a>
+        </div>
+    {% else %}
+        <div style="text-align: center; padding: 50px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <h2>Votre panier est vide</h2>
+            <p>Ajoutez des produits pour commencer vos achats.</p>
+            <a href="{{ url_for('index') }}" class="btn" style="margin-top: 20px;">Découvrir nos produits</a>
+        </div>
+    {% endif %}
+{% endblock %}

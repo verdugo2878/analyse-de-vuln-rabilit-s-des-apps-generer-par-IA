@@ -1,0 +1,59 @@
+{
+  "n_blocks": 7,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 6,
+    "generated": 1
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 18,
+      "chars": 302
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "txt",
+      "source": "preceding_text",
+      "lines": 9,
+      "chars": 135
+    },
+    {
+      "filename": "models.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 27,
+      "chars": 1034
+    },
+    {
+      "filename": "forms.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 21,
+      "chars": 948
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 125,
+      "chars": 4240
+    },
+    {
+      "filename": "templates/base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 39,
+      "chars": 1419
+    },
+    {
+      "filename": "static/style.css",
+      "lang": "css",
+      "source": "preceding_text",
+      "lines": 5,
+      "chars": 93
+    }
+  ]
+}

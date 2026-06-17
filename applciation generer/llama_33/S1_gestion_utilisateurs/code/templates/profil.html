@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+</head>
+<body>
+    <h1>Profil</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ formulaire.hidden_tag() }}
+        {{ formulaire.nom.label }} {{ formulaire.nom() }}
+        {{ formulaire.email.label }} {{ formulaire.email() }}
+        {{ formulaire.photo_profil.label }} {{ formulaire.photo_profil() }}
+        {{ formulaire.bio.label }} {{ formulaire.bio() }}
+        {{ formulaire.submit() }}
+    </form>
+</body>
+</html>

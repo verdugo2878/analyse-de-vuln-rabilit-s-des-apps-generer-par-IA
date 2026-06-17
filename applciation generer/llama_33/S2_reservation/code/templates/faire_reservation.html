@@ -1,0 +1,9 @@
+﻿<!DOCTYPE html>
+<html><head><title>Réserver</title></head><body>
+<h2>Faire une réservation</h2>
+<form method="POST">
+<select name="salle_id">{% for s in salles %}<option value="{{ s.id }}">{{ s.nom }}</option>{% endfor %}</select><br>
+<input name="date_debut" placeholder="Date début"><br>
+<input name="date_fin" placeholder="Date fin"><br>
+<button type="submit">Réserver</button>
+</form></body></html>

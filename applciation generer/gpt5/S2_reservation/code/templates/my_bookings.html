@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Mes réservations</h1>
+
+<h2>À venir</h2>
+{% if future %}
+<ul>
+  {% for b in future %}
+    <li>
+      {{ b.start_datetime }} → {{ b.end_datetime }} - {{ b.room.name }} ({{ b.status }})
+      <form method="post" action="{{ url_for('cancel_booking', booking_id=b.id) }}" style="display:inline" onsubmit="return confirm('Annuler cette réservation ?');">
+        <button class="btn btn-danger" type="submit">Annuler</button>
+      </form>
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Aucune réservation à venir.</p>
+{% endif %}
+
+<h2>Passées</h2>
+{% if past %}
+<ul>
+  {% for b in past %}
+    <li>{{ b.start_datetime }} → {{ b.end_datetime }} - {{ b.room.name }} ({{ b.status }})</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Aucune réservation passée.</p>
+{% endif %}
+{% endblock %}

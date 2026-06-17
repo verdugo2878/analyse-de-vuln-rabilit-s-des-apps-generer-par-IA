@@ -1,0 +1,23 @@
+coworking_reservation/
+├── app.py
+├── database.py
+├── models.py
+├── requirements.txt
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── rooms.html
+│   ├── book.html
+│   ├── my_bookings.html
+│   ├── admin_bookings.html
+│   ├── admin_rooms.html
+│   └── add_room.html
+└── instance/
+    └── coworking.db

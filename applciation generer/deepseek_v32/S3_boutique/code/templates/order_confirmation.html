@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Confirmation - Ma Boutique{% endblock %}
+
+{% block content %}
+<div class="text-center py-5">
+    <div class="mb-4">
+        <i class="fas fa-check-circle fa-5x text-success"></i>
+    </div>
+    
+    <h1 class="mb-3">Commande confirmée !</h1>
+    <p class="lead mb-4">Merci pour votre achat. Votre commande a été enregistrée avec succès.</p>
+    
+    <div class="card mx-auto mb-4" style="max-width: 500px;">
+        <div class="card-body">
+            <h5 class="card-title">Détails de la commande</h5>
+            <p class="card-text">
+                <strong>Numéro de commande:</strong> #{{ order_id }}<br>
+                <strong>Montant total:</strong> {{ total }} €<br>
+                <strong>Date:</strong> {{ now.strftime('%d/%m/%Y %H:%M') }}
+            </p>
+        </div>
+    </div>
+    
+    <p class="text-muted mb-4">
+        Un email de confirmation vous a été envoyé (simulation).<br>
+        Vous pouvez suivre votre commande dans votre espace client.
+    </p>
+    
+    <div class="d-flex justify-content-center gap-3">
+        <a href="{{ url_for('account') }}" class="btn btn-primary">
+            <i class="fas fa-user"></i> Voir mes commandes
+        </a>
+        <a href="{{ url_for('index') }}" class="btn btn-outline-primary">
+            <i class="fas fa-store"></i> Retour à la boutique
+        </a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Tableau de bord{% endblock %}
+
+{% block content %}
+    <h1>Tableau de bord</h1>
+    
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-label">Produits</div>
+            <div class="stat-number">{{ products_count }}</div>
+            <div>disponibles</div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-label">Commandes</div>
+            <div class="stat-number">{{ orders_count }}</div>
+            <div>passées</div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-label">Revenus</div>
+            <div class="stat-number">{{ "%.2f"|format(total_revenue) }}€</div>
+            <div>générés</div>
+        </div>
+    </div>
+{% endblock %}

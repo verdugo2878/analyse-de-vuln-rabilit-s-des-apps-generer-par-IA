@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Réserver {{ salle.nom }}{% endblock %}
+{% block content %}
+<h2>Réserver : {{ salle.nom }}</h2>
+<p class="text-muted">{{ salle.description }} — Capacité : {{ salle.capacite }}</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">Date</label>
+                        <input type="date" name="date" class="form-control" min="{{ today }}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Heure de début</label>
+                        <input type="time" name="heure_debut" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Heure de fin</label>
+                        <input type="time" name="heure_fin" class="form-control" required>
+                    </div>
+                    <button class="btn btn-primary">Confirmer la réservation</button>
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary">Retour</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h5>Créneaux déjà réservés</h5>
+        {% if reservations_salle %}
+            <ul class="list-group">
+            {% for r in reservations_salle %}
+                <li class="list-group-item">
+                    📅 {{ r.date }} de {{ r.heure_debut }} à {{ r.heure_fin }}
+                </li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-muted">Aucune réservation à venir.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

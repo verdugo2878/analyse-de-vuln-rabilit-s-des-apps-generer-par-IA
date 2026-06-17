@@ -1,0 +1,16 @@
+dashboard_entreprise/
+├── app.py
+├── database.py
+├── requirements.txt
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── uploads/
+├── templates/
+│   ├── base.html
+│   ├── dashboard.html
+│   ├── login.html
+│   ├── employes.html
+│   ├── fichiers.html
+│   └── rapports.html
+└── .env

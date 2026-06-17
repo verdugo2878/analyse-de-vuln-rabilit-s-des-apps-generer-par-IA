@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ produit.name }}</h1>
+    <p>{{ produit.description }}</p>
+    <p>Prix : {{ produit.price }} €</p>
+    <p>Stock : {{ produit.stock }}</p>
+    <form action="/ajouter_panier/{{ produit.id }}" method="post">
+        <button type="submit">Ajouter au panier</button>
+    </form>
+{% endblock %}

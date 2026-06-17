@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Commandes</h1>
+<table class="table">
+  <thead><tr><th>N°</th><th>Client</th><th>Date</th><th>Total</th><th>Statut</th><th>Actions</th></tr></thead>
+  <tbody>
+  {% for o in orders %}
+    <tr>
+      <td>#{{ o.id }}</td>
+      <td>{{ o.user.email }}</td>
+      <td>{{ o.created_at.strftime('%d/%m/%Y %H:%M') }}</td>
+      <td>{{ "%.2f"|format(o.total) }} €</td>
+      <td>
+        <form method="POST" action="{{ url_for('admin_update_order_status', order_id=o.id) }}" class="d-flex">
+          <select name="status" class="form-select form-select-sm">
+            {% for s in ['En cours','Expédiée','Livrée','Annulée'] %}
+              <option {% if o.status == s %}selected{% endif %}>{{ s }}</option>
+            {% endfor %}
+          </select>
+          <button class="btn btn-sm btn-primary ms-1">OK</button>
+        </form>
+      </td>
+      <td><a href="{{ url_for('order_detail', order_id=o.id) }}" class="btn btn-sm btn-info">Détails</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

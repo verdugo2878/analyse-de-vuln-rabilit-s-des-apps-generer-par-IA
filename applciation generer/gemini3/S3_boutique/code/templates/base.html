@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ma Boutique</title></head>
+<body>
+    <nav>
+        <a href="/">Accueil</a> | 
+        <a href="/panier">Panier</a> | 
+        {% if current_user.is_authenticated %}
+            <a href="/compte">Mon Compte</a> | 
+            {% if current_user.is_admin %}<a href="/admin">Admin</a> | {% endif %}
+            <a href="/logout">Déconnexion</a>
+        {% else %}
+            <a href="/login">Connexion</a>
+        {% endif %}
+    </nav>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}<ul>{% for message in messages %}<li>{{ message }}</li>{% endfor %}</ul>{% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h2>Mes réservations</h2>
+<ul class="list-group">
+{% for booking in bookings %}
+    <li class="list-group-item">Réservation #{{ booking.id }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

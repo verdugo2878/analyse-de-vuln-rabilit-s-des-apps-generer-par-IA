@@ -1,0 +1,94 @@
+{
+  "n_blocks": 12,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 10,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 17,
+      "chars": 284
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "txt",
+      "source": "preceding_text",
+      "lines": 20,
+      "chars": 454
+    },
+    {
+      "filename": "database.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 104,
+      "chars": 4120
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 406,
+      "chars": 14452
+    },
+    {
+      "filename": "base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 79,
+      "chars": 3630
+    },
+    {
+      "filename": "login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 36,
+      "chars": 1485
+    },
+    {
+      "filename": "dashboard.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 178,
+      "chars": 6202
+    },
+    {
+      "filename": "employes.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 173,
+      "chars": 10168
+    },
+    {
+      "filename": "fichiers.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 106,
+      "chars": 4548
+    },
+    {
+      "filename": "rapports.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 70,
+      "chars": 3278
+    },
+    {
+      "filename": "static/css/style.css",
+      "lang": "css",
+      "source": "preceding_text",
+      "lines": 84,
+      "chars": 1308
+    },
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 12,
+      "chars": 220
+    }
+  ]
+}

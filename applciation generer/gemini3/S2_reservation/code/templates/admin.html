@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Espace Gérant</h2>
+
+<div class="card mt-4 mb-4">
+    <div class="card-header">Ajouter une nouvelle salle</div>
+    <div class="card-body">
+        <form method="POST" class="row gx-3 gy-2 align-items-center">
+            <div class="col-sm-5"><input type="text" name="name" class="form-control" placeholder="Nom de la salle" required></div>
+            <div class="col-sm-3"><input type="number" name="capacity" class="form-control" placeholder="Capacité" required></div>
+            <div class="col-auto"><button type="submit" class="btn btn-success">Ajouter</button></div>
+        </form>
+    </div>
+</div>
+
+<h4>Toutes les réservations</h4>
+<table class="table table-bordered">
+    <tr><th>Client</th><th>Salle</th><th>Date</th><th>Horaires</th><th>Action</th></tr>
+    {% for r in reservations %}
+    <tr>
+        <td>{{ r.user.username }}</td>
+        <td>{{ r.room.name }}</td>
+        <td>{{ r.date.strftime('%d/%m/%Y') }}</td>
+        <td>{{ r.start_time.strftime('%H:%M') }} - {{ r.end_time.strftime('%H:%M') }}</td>
+        <td><a href="{{ url_for('cancel', res_id=r.id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Annuler cette réservation ?')">Annuler</a></td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5">Aucune réservation.</td></tr>
+    {% endfor %}
+</table>
+{% endblock %}

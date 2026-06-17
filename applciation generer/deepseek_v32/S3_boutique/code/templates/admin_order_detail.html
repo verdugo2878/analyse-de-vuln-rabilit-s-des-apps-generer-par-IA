@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Commande #{{ order.id }} - Admin{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Commande #{{ order.id }}</h1>
+    <a href="{{ url_for('admin_orders') }}" class="btn btn-outline-secondary">
+        <i class="fas fa-arrow-left"></i> Retour aux commandes
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Articles commandés</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Produit</th>
+                                <th>Prix unitaire</th>
+                                <th>Quantité</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in order_items %}
+                            <tr>
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.price }} €</td>
+                                <td>{{ item.quantity }}</td>
+                                <td>{{ item.price * item.quantity }} €</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Informations client</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Email:</strong> {{ order.email }}</p>
+                <p><strong>ID Client:</strong> {{ order.user_id }}</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Récapitulatif</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <strong>Statut:</strong>
+                    <span class="badge bg-{% if order.status == 'completed' %}success{% elif order.status == 'processing' %}warning{% elif order.status == 'cancelled' %}danger{% else %}info{% endif %} ms-2">
+                        {{ order.status }}
+                    </span>
+                </div>
+                
+                <div class="mb-2">
+                    <strong>Date:</strong> {{ order.created_at.strftime('%d/%m/%Y %H:%M') }}
+                </div>
+                
+                <div class="mb-2">
+                    <strong>Adresse de livraison:</strong>
+                    <p class="mt-1">{{ order.shipping_address }}</p>
+                </div>
+                
+                <hr>
+                
+                <div class="d-flex justify-content-between">
+                    <strong>Total:</strong>
+                    <strong>{{ order.total }} €</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

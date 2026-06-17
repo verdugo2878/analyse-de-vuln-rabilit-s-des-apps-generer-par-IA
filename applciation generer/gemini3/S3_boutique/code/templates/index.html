@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Nos Produits</h1>
+    {% for p in produits %}
+        <div style="border:1px solid black; padding:10px; margin:10px;">
+            <h3><a href="/produit/{{ p.id }}">{{ p.name }}</a></h3>
+            <p>{{ p.price }} €</p>
+        </div>
+    {% endfor %}
+{% endblock %}

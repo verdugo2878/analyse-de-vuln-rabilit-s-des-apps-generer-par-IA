@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Mes réservations - Coworking Space{% endblock %}
+
+{% block content %}
+<h1 class="mb-4"><i class="fas fa-calendar-alt me-2"></i>Mes réservations</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="mb-0">Réservations futures et passées</h5>
+    </div>
+    <div class="card-body">
+        {% if bookings %}
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Salle</th>
+                        <th>Date et heure</th>
+                        <th>Durée</th>
+                        <th>Prix total</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for booking in bookings %}
+                    <tr>
+                        <td>{{ booking.room_name }}</td>
+                        <td class="format-date">{{ booking.start_time }}</td>
+                        <td>
+                            {% set duration = ((booking.end_time|string|to_datetime) - (booking.start_time|string|to_datetime)).seconds // 3600 %}
+                            {{ duration }} heure{% if duration > 1 %}s{% endif %}
+                        </td>
+                        <td>{{ booking.price_per_hour * duration }}€</td>
+                        <td>
+                            {% if booking.status == 'confirmed' %}
+                                <span class="badge bg-success">Confirmée</span>
+                            {% elif booking.status == 'cancelled' %}
+                                <span class="badge bg-danger">Annulée</span>
+                            {% else %}
+                                <span class="badge bg-warning">{{ booking.status }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if booking.status == 'confirmed' and booking.start_time|string|to_datetime > now %}
+                                <a href="{{ url_for('cancel_booking', booking_id=booking.id) }}" 
+                                   class="btn btn-sm btn-danger cancel-booking">
+                                    <i class="fas fa-times me-1"></i>Annuler
+                                </a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="text-center py-4">
+            <i class="fas fa-calendar-times fa-3x text-muted mb-3"></i>
+            <p class="text-muted">Vous n'avez aucune réservation pour le moment.</p>
+            <a href="{{ url_for('rooms') }}" class="btn btn-primary">Réserver une salle</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

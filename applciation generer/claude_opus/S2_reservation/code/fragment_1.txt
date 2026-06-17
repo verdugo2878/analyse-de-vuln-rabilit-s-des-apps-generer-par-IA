@@ -1,0 +1,12 @@
+coworking/
+├── app.py
+├── requirements.txt
+└── templates/
+    ├── base.html
+    ├── login.html
+    ├── register.html
+    ├── index.html
+    ├── reserver.html
+    ├── mes_reservations.html
+    ├── admin.html
+    └── ajouter_salle.html

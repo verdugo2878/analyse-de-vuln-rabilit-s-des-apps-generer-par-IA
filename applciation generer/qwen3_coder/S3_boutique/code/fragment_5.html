@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Paiement - Boutique en Ligne{% endblock %}
+
+{% block content %}
+    <h1>Validation de commande</h1>
+    
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-top: 30px;">
+        <div>
+            <form method="POST" class="checkout-form">
+                <h2>Adresse de livraison</h2>
+                
+                <div class="form-group">
+                    <label class="form-label">Adresse</label>
+                    <input type="text" name="address" class="form-control" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group form-col">
+                        <label class="form-label">Ville</label>
+                        <input type="text" name="city" class="form-control" required>
+                    </div>
+                    <div class="form-group form-col">
+                        <label class="form-label">Code postal</label>
+                        <input type="text" name="postal_code" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Pays</label>
+                    <input type="text" name="country" class="form-control" value="France" required>
+                </div>
+                
+                <div class="payment-section">
+                    <h2>Informations de paiement</h2>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Numéro de carte</label>
+                        <input type="text" name="card_number" class="form-control" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group form-col">
+                            <label class="form-label">Date d'expiration</label>
+                            <input type="text" name="card_expiry" class="form-control" placeholder="MM/AA" required>
+                        </div>
+                        <div class="form-group form-col">
+                            <label class="form-label">Code CVV</label>
+                            <input type="text" name="card_cvv" class="form-control" placeholder="123" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-success" style="padding: 15px 30px; font-size: 1.1rem; width: 100%;">
+                    Confirmer la commande ({{ "%.2f"|format(total) }} €)
+                </button>
+            </form>
+        </div>
+        
+        <div>
+            <div class="cart-summary">
+                <h3>Récapitulatif</h3>
+                <div style="margin: 20px 0;">
+                    <p>Total : <strong>{{ "%.2f"|format(total) }} €</strong></p>
+                </div>
+                <p style="color: #666; font-size: 0.9rem;">
+                    En cliquant sur "Confirmer la commande", vous acceptez nos conditions générales de vente.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

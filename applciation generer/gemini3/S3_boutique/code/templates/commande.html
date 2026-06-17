@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Paiement et Livraison</h1>
+    <form method="post">
+        Adresse de livraison : <br>
+        <textarea name="adresse" required></textarea><br><br>
+        Numéro de Carte (Simulation) : <br>
+        <input type="text" name="carte" required placeholder="1234 5678..."><br><br>
+        <button type="submit">Payer et Valider</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block auth_content %}
+<div class="d-flex align-items-center justify-content-center" style="min-height:100vh; background: linear-gradient(135deg,#667eea,#764ba2);">
+    <div class="card shadow" style="width:400px;">
+        <div class="card-body p-4">
+            <h3 class="text-center mb-4"><i class="bi bi-shield-lock"></i> Connexion Admin</h3>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% for cat, msg in messages %}
+                    <div class="alert alert-{{ cat }}">{{ msg }}</div>
+                {% endfor %}
+            {% endwith %}
+            <form method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Nom d'utilisateur</label>
+                    <input type="text" name="username" class="form-control" required autofocus>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mot de passe</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+            </form>
+            <p class="text-muted small text-center mt-3">Démo : admin / admin123</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

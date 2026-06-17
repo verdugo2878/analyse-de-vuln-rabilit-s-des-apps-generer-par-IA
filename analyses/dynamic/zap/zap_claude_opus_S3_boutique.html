@@ -1,0 +1,3015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="%20zap_claude_opus_S3_boutique/normalize/normalize.css" rel="stylesheet">
+<link
+	href="%20zap_claude_opus_S3_boutique/themes/original/main.css" rel="stylesheet">
+<link
+	href="%20zap_claude_opus_S3_boutique/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="%20zap_claude_opus_S3_boutique/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on jeu. 7 mai 2026, at 13:42:03</span>
+		</p>
+		<p>ZAP Version: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Moyen</span>, <span>Confidence</span>=<span
+									class="confidence-level">Haut</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Moyen</span>, <span>Confidence</span>=<span
+									class="confidence-level">Moyen</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Moyen</span>, <span>Confidence</span>=<span
+									class="confidence-level">Faible</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Faible</span>, <span>Confidence</span>=<span
+									class="confidence-level">Haut</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Faible</span>, <span>Confidence</span>=<span
+									class="confidence-level">Moyen</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Pour information</span>, <span>Confidence</span>=<span
+									class="confidence-level">Haut</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Pour information</span>, <span>Confidence</span>=<span
+									class="confidence-level">Moyen</span> <span>(1)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost:5001</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Haut</span>, <span class="risk-level">Moyen</span>, <span class="risk-level">Faible</span>, <span class="risk-level">Pour information</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Haut</span>, <span class="confidence-level">Moyen</span>, <span class="confidence-level">Faible</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Haut</span>, <span class="confidence-level">Moyen</span>, <span class="confidence-level">Faible</span>, <span class="confidence-level">Faux positif</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">Haut</th>
+							<th scope="col">Moyen</th>
+							<th scope="col">Faible</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Haut</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Moyen</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Faible</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(30,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Pour information</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(40,0 %)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Haut</span><br>  <span
+									class="additional-info-percentages">(= Haut)</span>  
+							</th>
+							<th scope="col">
+								<span>Moyen</span><br>   <span
+									class="additional-info-percentages">(&gt;= Moyen)</span> 
+							</th>
+							<th scope="col">
+								<span>Faible</span><br>   <span
+									class="additional-info-percentages">(&gt;= Faible)</span> 
+							</th>
+							<th scope="col">
+								<span>Pour information</span><br>   <span
+									class="additional-info-percentages">(&gt;= Pour information)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost:5001</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(8)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Absence de Jetons Anti-CSRF</a></th>
+							<td class="risk-level">Moyen</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Moyen</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Débordement de tampon</a></th>
+							<td class="risk-level">Moyen</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Moyen</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Sub Resource Integrity Attribute Missing</a></th>
+							<td class="risk-level">Moyen</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Faible</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Faible</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Faible</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Authentication Request Identified</a></th>
+							<td class="risk-level">Pour information</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Session Management Response Identified</a></th>
+							<td class="risk-level">Pour information</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>10</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Reason</th>
+						<th scope="col">Site</th>
+						<th scope="col">Description</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>26 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>29 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Exceeded Low</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>9 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Exceeded Low</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 5xx</div>
+						</td>
+						<td align="center">
+							<div>34 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>66 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method POST</div>
+						</td>
+						<td align="center">
+							<div>33 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>15   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Exceeded Low</div>
+						</td>
+						<td>
+							<div>http://localhost:5001</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>26 %</div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Moyen</span>, <span>Confidence</span>=<span
+							class="confidence-level">Haut</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5001</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5001</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5001 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (190 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:05 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2177
+Vary: Cookie
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2177 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Ma Boutique&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;🛒 Ma Boutique&lt;/a&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/cart&quot;&gt;Panier (0)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/login&quot;&gt;Connexion&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/register&quot;&gt;Inscription&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;container mt-4&quot;&gt;
+  
+    
+  
+  
+&lt;h1 class=&quot;mb-4&quot;&gt;Nos produits&lt;/h1&gt;
+&lt;div class=&quot;row&quot;&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;T-shirt Blanc&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;19.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 50&lt;/p&gt;
+        &lt;a href=&quot;/product/1&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Jean Slim&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;49.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 30&lt;/p&gt;
+        &lt;a href=&quot;/product/2&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Casquette&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;14.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 100&lt;/p&gt;
+        &lt;a href=&quot;/product/3&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Sub Resource Integrity Attribute Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5001</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/345.html">CWE-345</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5001 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (190 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:05 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2177
+Vary: Cookie
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2177 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Ma Boutique&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;🛒 Ma Boutique&lt;/a&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/cart&quot;&gt;Panier (0)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/login&quot;&gt;Connexion&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/register&quot;&gt;Inscription&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;container mt-4&quot;&gt;
+  
+    
+  
+  
+&lt;h1 class=&quot;mb-4&quot;&gt;Nos produits&lt;/h1&gt;
+&lt;div class=&quot;row&quot;&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;T-shirt Blanc&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;19.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 50&lt;/p&gt;
+        &lt;a href=&quot;/product/1&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Jean Slim&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;49.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 30&lt;/p&gt;
+        &lt;a href=&quot;/product/2&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Casquette&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;14.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 100&lt;/p&gt;
+        &lt;a href=&quot;/product/3&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Provide a valid integrity attribute to the tag.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Moyen</span>, <span>Confidence</span>=<span
+							class="confidence-level">Moyen</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5001</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Débordement de tampon</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:5001/cart/add/3</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance">PCI_DSS</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_API = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/120.html">CWE-120</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Les erreurs de débordement de tampon sont caractérisées par la surécriture des espaces de mémoire du processus en arrière-plan, qui ne devraient jamais être modifiés, intentionnellement ou non. Écraser les valeurs de l&#39;IP (Instruction Pointer), BP (pointeur de Base) et autres registres provoque des exceptions, des erreurs de segmentation et des erreurs dans d&#39;autres processus. Ces erreurs terminent généralement l&#39;exécution de l&#39;application d&#39;une manière inattendue. </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Débordement de tampon potentiel. Le script a fermé la connexion et lancé une erreur interne du serveur 500</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (353 bytes)</summary>
+				
+				<pre><code>POST http://localhost:5001/cart/add/3 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost:5001/product/3
+content-length: 2109
+
+</code></pre>
+				
+				
+			</details> <details class="request-body">
+				<summary>Request body (2109 bytes)</summary>
+				
+				<pre><code>quantity=KTBcfqXRhjStHiANQeBooTEfUllpZrxuqEsmyoiAXtATHoqnnhQdtNaajaDiTnNgZkCVBdfACXPVUBcMgBuGarJsNEvtUYFgSVdmamNyvJEQpgGAjQPROKQjRLxWgUminVdlEZcWLNuUeMKROfjndoxpBSJVdoTBbWHNkAqbAqDEsQsZVqAJfGvFdthCXmiAwhbOPXmDkOvPnXHexUjMrtkOtJEdwpnAwfcGXZduGIiRrUXsMpoGTRNbYAcQWxhVYjNFjXkXbXpvBtnsVYFbbrFkptnNXBdHdfMPsOhkEEDhtQxNrfDvTYioNXHZNFifcHVqoFayTDAyBfujygDYVVKwCJUtvWyieTNBAwfKVIuyYUMBlFDVNmsFxddBTeeKAEYwJAqwWLQkucKlLxjvVqPgpvdixYLvwXnCnpcvvPCFDlhciLINVpcCbxCfXJKNjQBjbMoGagjOoaoeCyXUoGQBkwZPbYutBTslPvEnKcKkPqAOwObURtCVitEOgWuTEyKXsOAOfYgXXbCeRNTnoFXkDhjRFUUSKyhboFLhOxZChSdbTZVixGEjgBPGkDTFkElAdtpyZqyHXnPZVPQrlcOHLibhZxHVeNeEmjJaeLWZoBnGAtqdXCXFnphURBhThiOwPxHedteHAYgXytMPStMfATXYDosFFbGgPsvDhTxgdNYbLxbfwrHFmFfmMtdFEUjOdhEgqPIbieNbsowusUKDPrxLkDLiZNOlqsodSGZZpNoALfDcMGausKqufJXvPxYSOqCCFXhXSMFNbcloaJpdhoSMdwIkPBqopoKkgBJTMWWQEykIeibKMlOayUEhqNvOvIlROmClNtsoYwAfovTVqDpAXvQPSOtlqTmlfZjsGLQyDCMTPyTjgamwoWywdLogXoYAqUjeabIfyHRwOGHVpcPbWJBibCxUULNIpYHXoyKPMNCqFjWyBnYakAVLlHtLAKpjABoSKpAECcdmpkywUAOdTPaVfJDEAOIahMbotTOhLVjSNvOkYBqltThXmOCEplxCeCkHvsPItxcxIfFODvEXLMcEYxVuJojfqkhVhFiPuwBBwRonGojGboBQkFqHMZImIXhnpSdonBjigvMePosVVfmFvRFZFIacMhEPnrLGxIOJkZJGYrFZpHuYTmlrMxBGKLdErRPkdhQJPRAWYyBqHXFssbMomrorjAfnvAQaUemudOteaapFXgZJwecsmWlItLmWoWaOlsCNqyouQykuIAPwvfgRvBgevjIKVbfTCiMAwBBwnZSJWqbYHRCwiVaDEEcOxbPBpbmhxgnUgBcmfUppQWdnqxGaLACwUylGkhyphWBilvpETUIKAInotPHFYhdhwvKiqBaySvlNKFcuDjUSiKwkIXaHveESdFEWcxjxEIPSZYjFBQlspDsuKxrSOmVFdWBRyWsdrVycgbUjhGVZMpNpACtnrLOosQGsOWSMZynZNIVaexQAmswfrOOLXtQsULXwLJWRuDBWPpcHWhfwvKQctyZReJstBtWtYvvvaTRUYbMbwXVHUrdoHpqiuClWygPXGtgMqfokabgOsyXIdVIynLwhNvbMldFcpwNpUkyQrfBaMNaHfSHHmWDQgERtsAPVgxbHrnQDlUulZqQqieFTlGJXAmFoOseSjlYTFbhOLacshjVYgRxTXrPCBoxCiFEsBPttTistspCMEfdqiuXcgmxdeftHGpINNLLBYSSfUWVQkZatIDTTBoFgBeGHMGMKyAhJtxXkvEyWhWiIjuYAIPatBphqZdXhWvuqbATekBwmOvqQwXNPtKFPlKufhXueWMdTfdKDlarFqIMtrSmThWZybYXoQljUvPMSdrGpfmTNPtBRRbErJZOeXiWbXsHvainUDetaYvZIBQhgtMbxrbFuFMohbqcPJFXcKrerPCexVRBYCWnTDLbJvwLSJMUYbnlSRXdmZUcIQeitfwINOxVQtAnqnSIoSsMdvetmIutTSHVKTMXQRugrVwvniplEfZeDviNWLQsjmBFYGBXyXwPWEkPXBoALPNrqXxylslwtchqUQNISsrDEZPrRUMXJCcdnBjogjciJYyrkwKmIXRbOaiqtAaZDYAYg</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (196 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 500 INTERNAL SERVER ERROR
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:46 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 16307
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (16307 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=en&gt;
+  &lt;head&gt;
+    &lt;title&gt;ValueError: invalid literal for int() with base 10: &amp;#39;KTBcfqXRhjStHiANQeBooTEfUllpZrxuqEsmyoiAXtATHoqnnhQdtNaajaDiTnNgZkCVBdfACXPVUBcMgBuGarJsNEvtUYFgSVdmamNyvJEQpgGAjQPROKQjRLxWgUminVdlEZcWLNuUeMKROfjndoxpBSJVdoTBbWHNkAqbAqDEsQsZVqAJfGvFdthCXmiAwhbOPXm
+ // Werkzeug Debugger&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;?__debugger__=yes&amp;amp;cmd=resource&amp;amp;f=style.css&quot;&gt;
+    &lt;link rel=&quot;shortcut icon&quot;
+        href=&quot;?__debugger__=yes&amp;amp;cmd=resource&amp;amp;f=console.png&quot;&gt;
+    &lt;script src=&quot;?__debugger__=yes&amp;amp;cmd=resource&amp;amp;f=debugger.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = &quot;feLLu2Wd8op346eViwrz&quot;;
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body style=&quot;background-color: #fff&quot;&gt;
+    &lt;div class=&quot;debugger&quot;&gt;
+&lt;h1&gt;ValueError&lt;/h1&gt;
+&lt;div class=&quot;detail&quot;&gt;
+  &lt;p class=&quot;errormsg&quot;&gt;ValueError: invalid literal for int() with base 10: &amp;#39;KTBcfqXRhjStHiANQeBooTEfUllpZrxuqEsmyoiAXtATHoqnnhQdtNaajaDiTnNgZkCVBdfACXPVUBcMgBuGarJsNEvtUYFgSVdmamNyvJEQpgGAjQPROKQjRLxWgUminVdlEZcWLNuUeMKROfjndoxpBSJVdoTBbWHNkAqbAqDEsQsZVqAJfGvFdthCXmiAwhbOPXm
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 class=&quot;traceback&quot;&gt;Traceback &lt;em&gt;(most recent call last)&lt;/em&gt;&lt;/h2&gt;
+&lt;div class=&quot;traceback&quot;&gt;
+  &lt;h3&gt;&lt;/h3&gt;
+  &lt;ul&gt;&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-1786947438480&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1478&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;__call__&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def __call__(self, environ: dict, start_response: t.Callable) -&amp;gt; t.Any:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;&amp;#34;&amp;#34;&amp;#34;The WSGI server calls the Flask application object as the&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;WSGI application. This calls :meth:`wsgi_app`, which can be&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;wrapped to apply middleware.&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self.wsgi_app(environ, start_response)
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-1786947439488&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1458&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;wsgi_app&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;ctx.push()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = self.full_dispatch_request()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;except Exception as e:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = e&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = self.handle_exception(e)
+&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;           ^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;except:  # noqa: B001&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = sys.exc_info()[1]&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;raise&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return response(environ, start_response)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;finally:&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-1786947439776&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1455&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;wsgi_app&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;ctx = self.request_context(environ)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;error: BaseException | None = None&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;ctx.push()&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = self.full_dispatch_request()
+&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;except Exception as e:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = e&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = self.handle_exception(e)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;except:  # noqa: B001&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = sys.exc_info()[1]&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-1786947439920&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;869&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;full_dispatch_request&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;request_started.send(self, _async_wrapper=self.ensure_sync)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;rv = self.preprocess_request()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;if rv is None:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;rv = self.dispatch_request()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;except Exception as e:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;rv = self.handle_user_exception(e)
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self.finalize_request(rv)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def finalize_request(&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;self,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;rv: ft.ResponseReturnValue | HTTPException,&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-1786947440064&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;867&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;full_dispatch_request&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;request_started.send(self, _async_wrapper=self.ensure_sync)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;rv = self.preprocess_request()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;if rv is None:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;rv = self.dispatch_request()
+&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;     ^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;except Exception as e:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;rv = self.handle_user_exception(e)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self.finalize_request(rv)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def finalize_request(&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-1786947440208&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;852&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;dispatch_request&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;and req.method == &amp;#34;OPTIONS&amp;#34;&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return self.make_default_options_response()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;# otherwise dispatch to the handler for that endpoint&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def full_dispatch_request(self) -&amp;gt; Response:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;&amp;#34;&amp;#34;&amp;#34;Dispatches the request and on top of that performs request&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;pre and postprocessing as well as HTTP exception catching and&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;error handling.&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-1786947440352&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;76&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;cart_add&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source &quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;return render_template(&amp;#39;cart.html&amp;#39;, items=items, total=total)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt;@app.route(&amp;#39;/cart/add/&amp;lt;int:product_id&amp;gt;&amp;#39;, methods=[&amp;#39;POST&amp;#39;])&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt;def cart_add(product_id):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;product = Product.query.get_or_404(product_id)&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;quantity = int(request.form.get(&amp;#39;quantity&amp;#39;, 1))
+&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;cart = get_cart()&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;pid = str(product_id)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;current = cart.get(pid, 0)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;new_qty = current + quantity&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;if new_qty &amp;gt; product.stock:&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/ul&gt;
+  &lt;blockquote&gt;ValueError: invalid literal for int() with base 10: &amp;#39;KTBcfqXRhjStHiANQeBooTEfUllpZrxuqEsmyoiAXtATHoqnnhQdtNaajaDiTnNgZkCVBdfACXPVUBcMgBuGarJsNEvtUYFgSVdmamNyvJEQpgGAjQPROKQjRLxWgUminVdlEZcWLNuUeMKROfjndoxpBSJVdoTBbWHNkAqbAqDEsQsZVqAJfGvFdthCXmiAwhbOPXm
+&lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;plain&quot;&gt;
+    &lt;p&gt;
+      This is the Copy/Paste friendly version of the traceback.
+    &lt;/p&gt;
+    &lt;textarea cols=&quot;50&quot; rows=&quot;10&quot; name=&quot;code&quot; readonly&gt;Traceback (most recent call last):
+  File &amp;#34;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&amp;#34;, line 1478, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&amp;#34;, line 1458, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&amp;#34;, line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&amp;#34;, line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&amp;#34;, line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&amp;#34;, line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\app.py&amp;#34;, line 76, in cart_add
+    quantity = int(request.form.get(&amp;#39;quantity&amp;#39;, 1))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: &amp;#39;KTBcfqXRhjStHiANQeBooTEfUllpZrxuqEsmyoiAXtATHoqnnhQdtNaajaDiTnNgZkCVBdfACXPVUBcMgBuGarJsNEvtUYFgSVdmamNyvJEQpgGAjQPROKQjRLxWgUminVdlEZcWLNuUeMKROfjndoxpBSJVdoTBbWHNkAqbAqDEsQsZVqAJfGvFdthCXmiAwhbOPXm
+&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class=&quot;explanation&quot;&gt;
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  &lt;span class=&quot;nojavascript&quot;&gt;
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.&lt;/span&gt;
+&lt;/div&gt;
+      &lt;div class=&quot;footer&quot;&gt;
+        Brought to you by &lt;strong class=&quot;arthur&quot;&gt;DON&#39;T PANIC&lt;/strong&gt;, your
+        friendly Werkzeug powered traceback interpreter.
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;pin-prompt&quot;&gt;
+      &lt;div class=&quot;inner&quot;&gt;
+        &lt;h3&gt;Console Locked&lt;/h3&gt;
+        &lt;p&gt;
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        &lt;form&gt;
+          &lt;p&gt;PIN:
+            &lt;input type=text name=pin size=14&gt;
+            &lt;input type=submit name=btn value=&quot;Confirm Pin&quot;&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--
+
+Traceback (most recent call last):
+  File &quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;, line 1478, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;, line 1458, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;, line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;, line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;, line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\venv_app\Lib\site-packages\flask\app.py&quot;, line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Projet-cyber\apps_generated\claude_opus\S3_boutique\code\app.py&quot;, line 76, in cart_add
+    quantity = int(request.form.get(&#39;quantity&#39;, 1))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: &#39;KTBcfqXRhjStHiANQeBooTEfUllpZrxuqEsmyoiAXtATHoqnnhQdtNaajaDiTnNgZkCVBdfACXPVUBcMgBuGarJsNEvtUYFgSVdmamNyvJEQpgGAjQPROKQjRLxWgUminVdlEZcWLNuUeMKROfjndoxpBSJVdoTBbWHNkAqbAqDEsQsZVqAJfGvFdthCXmiAwhbOPXm
+
+
+--&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>quantity</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>KTBcfqXRhjStHiANQeBooTEfUllpZrxuqEsmyoiAXtATHoqnnhQdtNaajaDiTnNgZkCVBdfACXPVUBcMgBuGarJsNEvtUYFgSVdmamNyvJEQpgGAjQPROKQjRLxWgUminVdlEZcWLNuUeMKROfjndoxpBSJVdoTBbWHNkAqbAqDEsQsZVqAJfGvFdthCXmiAwhbOPXmDkOvPnXHexUjMrtkOtJEdwpnAwfcGXZduGIiRrUXsMpoGTRNbYAcQWxhVYjNFjXkXbXpvBtnsVYFbbrFkptnNXBdHdfMPsOhkEEDhtQxNrfDvTYioNXHZNFifcHVqoFayTDAyBfujygDYVVKwCJUtvWyieTNBAwfKVIuyYUMBlFDVNmsFxddBTeeKAEYwJAqwWLQkucKlLxjvVqPgpvdixYLvwXnCnpcvvPCFDlhciLINVpcCbxCfXJKNjQBjbMoGagjOoaoeCyXUoGQBkwZPbYutBTslPvEnKcKkPqAOwObURtCVitEOgWuTEyKXsOAOfYgXXbCeRNTnoFXkDhjRFUUSKyhboFLhOxZChSdbTZVixGEjgBPGkDTFkElAdtpyZqyHXnPZVPQrlcOHLibhZxHVeNeEmjJaeLWZoBnGAtqdXCXFnphURBhThiOwPxHedteHAYgXytMPStMfATXYDosFFbGgPsvDhTxgdNYbLxbfwrHFmFfmMtdFEUjOdhEgqPIbieNbsowusUKDPrxLkDLiZNOlqsodSGZZpNoALfDcMGausKqufJXvPxYSOqCCFXhXSMFNbcloaJpdhoSMdwIkPBqopoKkgBJTMWWQEykIeibKMlOayUEhqNvOvIlROmClNtsoYwAfovTVqDpAXvQPSOtlqTmlfZjsGLQyDCMTPyTjgamwoWywdLogXoYAqUjeabIfyHRwOGHVpcPbWJBibCxUULNIpYHXoyKPMNCqFjWyBnYakAVLlHtLAKpjABoSKpAECcdmpkywUAOdTPaVfJDEAOIahMbotTOhLVjSNvOkYBqltThXmOCEplxCeCkHvsPItxcxIfFODvEXLMcEYxVuJojfqkhVhFiPuwBBwRonGojGboBQkFqHMZImIXhnpSdonBjigvMePosVVfmFvRFZFIacMhEPnrLGxIOJkZJGYrFZpHuYTmlrMxBGKLdErRPkdhQJPRAWYyBqHXFssbMomrorjAfnvAQaUemudOteaapFXgZJwecsmWlItLmWoWaOlsCNqyouQykuIAPwvfgRvBgevjIKVbfTCiMAwBBwnZSJWqbYHRCwiVaDEEcOxbPBpbmhxgnUgBcmfUppQWdnqxGaLACwUylGkhyphWBilvpETUIKAInotPHFYhdhwvKiqBaySvlNKFcuDjUSiKwkIXaHveESdFEWcxjxEIPSZYjFBQlspDsuKxrSOmVFdWBRyWsdrVycgbUjhGVZMpNpACtnrLOosQGsOWSMZynZNIVaexQAmswfrOOLXtQsULXwLJWRuDBWPpcHWhfwvKQctyZReJstBtWtYvvvaTRUYbMbwXVHUrdoHpqiuClWygPXGtgMqfokabgOsyXIdVIynLwhNvbMldFcpwNpUkyQrfBaMNaHfSHHmWDQgERtsAPVgxbHrnQDlUulZqQqieFTlGJXAmFoOseSjlYTFbhOLacshjVYgRxTXrPCBoxCiFEsBPttTistspCMEfdqiuXcgmxdeftHGpINNLLBYSSfUWVQkZatIDTTBoFgBeGHMGMKyAhJtxXkvEyWhWiIjuYAIPatBphqZdXhWvuqbATekBwmOvqQwXNPtKFPlKufhXueWMdTfdKDlarFqIMtrSmThWZybYXoQljUvPMSdrGpfmTNPtBRRbErJZOeXiWbXsHvainUDetaYvZIBQhgtMbxrbFuFMohbqcPJFXcKrerPCexVRBYCWnTDLbJvwLSJMUYbnlSRXdmZUcIQeitfwINOxVQtAnqnSIoSsMdvetmIutTSHVKTMXQRugrVwvniplEfZeDviNWLQsjmBFYGBXyXwPWEkPXBoALPNrqXxylslwtchqUQNISsrDEZPrRUMXJCcdnBjogjciJYyrkwKmIXRbOaiqtAaZDYAYg</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Connection: close</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Réécrire le programme d&#39;arrière-plan en utilisant une vérification de la longueur de retour correcte.  Cela nécessitera une recompilation de l&#39;exécutable d&#39;arrière-plan.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5001</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5001 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (190 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:05 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2177
+Vary: Cookie
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2177 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Ma Boutique&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;🛒 Ma Boutique&lt;/a&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/cart&quot;&gt;Panier (0)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/login&quot;&gt;Connexion&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/register&quot;&gt;Inscription&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;container mt-4&quot;&gt;
+  
+    
+  
+  
+&lt;h1 class=&quot;mb-4&quot;&gt;Nos produits&lt;/h1&gt;
+&lt;div class=&quot;row&quot;&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;T-shirt Blanc&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;19.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 50&lt;/p&gt;
+        &lt;a href=&quot;/product/1&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Jean Slim&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;49.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 30&lt;/p&gt;
+        &lt;a href=&quot;/product/2&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Casquette&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;14.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 100&lt;/p&gt;
+        &lt;a href=&quot;/product/3&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Moyen</span>, <span>Confidence</span>=<span
+							class="confidence-level">Faible</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5001</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Absence de Jetons Anti-CSRF</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5001/product/1</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/352.html">CWE-352</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Aucun jetons Anti-CSRF n&#39;ont été trouvés dans un formulaire HTML.</p>
+
+<p>La contrefaçon de requête intersites (Cross Site Request Forgery - CSRF) est une attaque qui consiste à forcer une victime à envoyer une requête HTTP vers une destination cible, sans qu&#39;elle n&#39;en aie ni connaissance ni intention, afin d&#39;effectuer une action en se faisant passer pour la victime. La cause originelle est que les fonctionnalités de l&#39;application sont appelées à l&#39;aide d&#39;URL ou d&#39;actions de formulaires prévisibles et reproductibles. La nature de l&#39;attaque est que le CSRF exploite la confiance qu&#39;un site internet accorde à un utilisateur. En revanche, le cross-site scripting (XSS) exploite la confiance que l&#39;utilisateur porte à un site internet. Comme XSS, les attaques CSRF ne sont pas nécessairement multi-sites, mais elles peuvent l&#39;être. La contrefaçon de requête intersite est également connue sous les noms CSRF, XSRF, attaque en un clic (one-click attack), session riding, confused deputy et sea surf.</p>
+
+<p>Les attaques CSRF sont efficaces dans de nombreuses situations, notamment:</p>
+
+<p>* quand la victime a une session active sur le site cible.</p>
+
+<p>    * quand la victime est authentifiée via HTTP auth sur le site cible.</p>
+
+<p>    * quand la victime est sur le même réseau local que le site cible.</p>
+
+<p>CSRF a d&#39;abord été utilisée pour effectuer une action contre un site cible en utilisant les privilèges de la victime, mais des techniques récentes permettent d&#39;avoir accès à des renseignements en accédant à la réponse. Le risque de divulgation d&#39;informations est considérablement augmenté lorsque le site cible est vulnérable aux XSS, parce que XSS peut être utilisé comme une plateforme pour CSRF, permettant à l&#39;attaque d&#39;opérer dans les limites de la politique de même origine.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Aucun jetons Anti-CSRF connus [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] n&#39;a été trouvé dans le formulaire HTML suivant: [Form 1: &quot;quantity&quot; ].  </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (270 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5001/product/1 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:5001
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (190 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:05 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1422
+Vary: Cookie
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1422 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Ma Boutique&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;🛒 Ma Boutique&lt;/a&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/cart&quot;&gt;Panier (0)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/login&quot;&gt;Connexion&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/register&quot;&gt;Inscription&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;container mt-4&quot;&gt;
+  
+    
+  
+  
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;img-fluid&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;h1&gt;T-shirt Blanc&lt;/h1&gt;
+    &lt;h3 class=&quot;text-primary&quot;&gt;19.99 €&lt;/h3&gt;
+    &lt;p&gt;T-shirt coton bio&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Stock :&lt;/strong&gt; 50&lt;/p&gt;
+    
+    &lt;form method=&quot;POST&quot; action=&quot;/cart/add/1&quot;&gt;
+      &lt;div class=&quot;input-group mb-3&quot; style=&quot;max-width:200px;&quot;&gt;
+        &lt;input type=&quot;number&quot; name=&quot;quantity&quot; value=&quot;1&quot; min=&quot;1&quot; max=&quot;50&quot; class=&quot;form-control&quot;&gt;
+        &lt;button class=&quot;btn btn-success&quot; type=&quot;submit&quot;&gt;Ajouter au panier&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form method=&quot;POST&quot; action=&quot;/cart/add/1&quot;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Phase: Architecture et Design</p>
+
+<p>Utilisez une librairie ou un framework approuvé qui ne permet pas cette vulnérabilité, ou qui contient des fonctionnalités permettant d&#39;éviter plus facilement cette vulnérabilité.</p>
+
+<p>Utilisez  par exemple des librairies anti-CSRF telles que CSRFGuard de l&#39;OWASP.</p>
+
+<p>Phase: Implémentation</p>
+
+<p>Assurez-vous que votre application soit exempte de problèmes de cross-site scripting, parce que la plupart des défenses contre le CSRF peuvent être contournées en utilisant des scripts contrôlés par le pirate.</p>
+
+<p>Phase: Architecture et Design</p>
+
+<p>Générez une valeur à usage unique pour chaque formulaire, placez-la dans le formulaire et vérifiez-la à la réception du formulaire. Assurez-vous que cette valeur unique ne soit pas prévisible (CWE-330).</p>
+
+<p>Notez que ceci peut aussi être contourné en utilisant XSS.</p>
+
+<p>Identifiez les opérations particulièrement dangereuses. Quand l&#39;utilisateur exécute une opération dangereuse, envoyez une requête de confirmation distincte pour vérifier que l&#39;utilisateur veut effectivement effectuer cette opération.</p>
+
+<p>Notez que ceci peut aussi être contourné en utilisant XSS.</p>
+
+<p>Utilisez la librairie de gestion de session ESAPI.</p>
+
+<p>Cette librairie comprend un composant pour le contrôle de CSRF.</p>
+
+<p>N&#39;utilisez pas la méthode GET pour les requêtes entraînant un changement d&#39;état.</p>
+
+<p>Phase: Implémentation</p>
+
+<p>Vérifiez l&#39;en-tête HTTP Referer pour voir si la requête provient d&#39;une page attendue. Ceci pourrait toutefois restreindre la fonctionnalité de l&#39;application, car les utilisateurs ou les serveurs proxy pourraient avoir désactivé le renvoi du HTTP Referer pour des raisons de confidentialité.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Faible</span>, <span>Confidence</span>=<span
+							class="confidence-level">Haut</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5001</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5001</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5001 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (190 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:05 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2177
+Vary: Cookie
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2177 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Ma Boutique&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;🛒 Ma Boutique&lt;/a&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/cart&quot;&gt;Panier (0)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/login&quot;&gt;Connexion&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/register&quot;&gt;Inscription&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;container mt-4&quot;&gt;
+  
+    
+  
+  
+&lt;h1 class=&quot;mb-4&quot;&gt;Nos produits&lt;/h1&gt;
+&lt;div class=&quot;row&quot;&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;T-shirt Blanc&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;19.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 50&lt;/p&gt;
+        &lt;a href=&quot;/product/1&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Jean Slim&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;49.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 30&lt;/p&gt;
+        &lt;a href=&quot;/product/2&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Casquette&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;14.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 100&lt;/p&gt;
+        &lt;a href=&quot;/product/3&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Werkzeug/3.0.1 Python/3.12.10</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Faible</span>, <span>Confidence</span>=<span
+							class="confidence-level">Moyen</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5001</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:5001/cart/add/2</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1275.html">CWE-1275</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (351 bytes)</summary>
+				
+				<pre><code>POST http://localhost:5001/cart/add/2 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost:5001/product/2
+content-length: 10
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (10 bytes)</summary>
+				
+				<pre><code>quantity=3</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (395 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 FOUND
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:06 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 197
+Location: /cart
+Vary: Cookie
+Set-Cookie: session=eyJfZmxhc2hlcyI6W3siIHQiOlsic3VjY2VzcyIsIkplYW4gU2xpbSBham91dFx1MDBlOSBhdSBwYW5pZXIuIl19XSwiY2FydCI6eyIyIjozfX0.afzMHg.owRJZANxRke_3iexC5no6e5jsGg; HttpOnly; Path=/
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (197 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=en&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to the target URL: &lt;a href=&quot;/cart&quot;&gt;/cart&lt;/a&gt;. If not, click the link.
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>session</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: session</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5001</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (228 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5001 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (190 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:05 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2177
+Vary: Cookie
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2177 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Ma Boutique&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;🛒 Ma Boutique&lt;/a&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/cart&quot;&gt;Panier (0)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/login&quot;&gt;Connexion&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/register&quot;&gt;Inscription&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;container mt-4&quot;&gt;
+  
+    
+  
+  
+&lt;h1 class=&quot;mb-4&quot;&gt;Nos produits&lt;/h1&gt;
+&lt;div class=&quot;row&quot;&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;T-shirt Blanc&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;19.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 50&lt;/p&gt;
+        &lt;a href=&quot;/product/1&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Jean Slim&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;49.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 30&lt;/p&gt;
+        &lt;a href=&quot;/product/2&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;col-md-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;img src=&quot;/static/uploads/default.png&quot; class=&quot;card-img-top&quot; style=&quot;height:200px;object-fit:cover;&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Casquette&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;14.99 €&lt;/p&gt;
+        &lt;p class=&quot;text-muted small&quot;&gt;Stock : 100&lt;/p&gt;
+        &lt;a href=&quot;/product/3&quot; class=&quot;btn btn-primary&quot;&gt;Voir&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-0-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Pour information</span>, <span>Confidence</span>=<span
+							class="confidence-level">Haut</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5001</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Authentication Request Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:5001/login</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given request has been identified as an authentication request. The &#39;Other Info&#39; field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to &quot;Auto-Detect&quot; then this rule will change the authentication to match the request identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=email</p>
+
+<p>userValue=zaproxy@example.com</p>
+
+<p>passwordParam=password</p>
+
+<p>referer=http://localhost:5001/login</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (342 bytes)</summary>
+				
+				<pre><code>POST http://localhost:5001/login HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost:5001/login
+content-length: 40
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (40 bytes)</summary>
+				
+				<pre><code>email=zaproxy%40example.com&amp;password=ZAP</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (287 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:06 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1326
+Vary: Cookie
+Set-Cookie: session=eyJfZnJlc2giOmZhbHNlfQ.afzMHg.BKdL2N9dAHZAxl7HtLyFmvazRd4; HttpOnly; Path=/
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1326 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Ma Boutique&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;🛒 Ma Boutique&lt;/a&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/cart&quot;&gt;Panier (0)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/login&quot;&gt;Connexion&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/register&quot;&gt;Inscription&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;container mt-4&quot;&gt;
+  
+    
+      &lt;div class=&quot;alert alert-danger&quot;&gt;Email ou mot de passe incorrect.&lt;/div&gt;
+    
+  
+  
+&lt;h1&gt;Connexion&lt;/h1&gt;
+&lt;form method=&quot;POST&quot; style=&quot;max-width:400px;&quot;&gt;
+  &lt;div class=&quot;mb-2&quot;&gt;&lt;input name=&quot;email&quot; type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Email&quot; required&gt;&lt;/div&gt;
+  &lt;div class=&quot;mb-2&quot;&gt;&lt;input name=&quot;password&quot; type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Mot de passe&quot; required&gt;&lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary&quot;&gt;Se connecter&lt;/button&gt;
+&lt;/form&gt;
+&lt;p class=&quot;mt-3&quot;&gt;Pas de compte ? &lt;a href=&quot;/register&quot;&gt;Inscription&lt;/a&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Pour information</span>, <span>Confidence</span>=<span
+							class="confidence-level">Moyen</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5001</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:5001/cart/add/2</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:session</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (351 bytes)</summary>
+				
+				<pre><code>POST http://localhost:5001/cart/add/2 HTTP/1.1
+host: localhost:5001
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost:5001/product/2
+content-length: 10
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (10 bytes)</summary>
+				
+				<pre><code>quantity=3</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (395 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 FOUND
+Server: Werkzeug/3.0.1 Python/3.12.10
+Date: Thu, 07 May 2026 17:30:06 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 197
+Location: /cart
+Vary: Cookie
+Set-Cookie: session=eyJfZmxhc2hlcyI6W3siIHQiOlsic3VjY2VzcyIsIkplYW4gU2xpbSBham91dFx1MDBlOSBhdSBwYW5pZXIuIl19XSwiY2FydCI6eyIyIjozfX0.afzMHg.owRJZANxRke_3iexC5no6e5jsGg; HttpOnly; Path=/
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (197 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=en&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to the target URL: &lt;a href=&quot;/cart&quot;&gt;/cart&lt;/a&gt;. If not, click the link.
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>session</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>session</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Absence de Jetons Anti-CSRF</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Absence de Jetons Anti-CSRF</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Débordement de tampon</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/30001/">Débordement de tampon</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/120.html">120</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>7</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/attacks/Buffer_overflow_attack">https://owasp.org/www-community/attacks/Buffer_overflow_attack</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Sub Resource Integrity Attribute Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90003/">Sub Resource Integrity Attribute Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site">https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Authentication Request Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Authentication Request Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

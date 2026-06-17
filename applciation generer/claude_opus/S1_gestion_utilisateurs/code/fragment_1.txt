@@ -1,0 +1,14 @@
+user_management/
+├── app.py
+├── requirements.txt
+├── static/
+│   └── uploads/
+└── templates/
+    ├── base.html
+    ├── index.html
+    ├── register.html
+    ├── login.html
+    ├── profile.html
+    ├── edit_profile.html
+    ├── admin.html
+    └── dashboard.html

@@ -1,0 +1,51 @@
+{
+  "extractor": "gpt5_dedicated",
+  "n_files": 9,
+  "files": [
+    {
+      "filename": "templates/base.html",
+      "lines": 42,
+      "chars": 1404
+    },
+    {
+      "filename": "templates/index.html",
+      "lines": 16,
+      "chars": 443
+    },
+    {
+      "filename": "templates/login.html",
+      "lines": 14,
+      "chars": 403
+    },
+    {
+      "filename": "templates/register.html",
+      "lines": 19,
+      "chars": 519
+    },
+    {
+      "filename": "templates/rooms.html",
+      "lines": 14,
+      "chars": 366
+    },
+    {
+      "filename": "templates/room_detail.html",
+      "lines": 29,
+      "chars": 859
+    },
+    {
+      "filename": "templates/my_bookings.html",
+      "lines": 31,
+      "chars": 819
+    },
+    {
+      "filename": "templates/bookings.html",
+      "lines": 36,
+      "chars": 928
+    },
+    {
+      "filename": "templates/add_room.html",
+      "lines": 48,
+      "chars": 2147
+    }
+  ]
+}

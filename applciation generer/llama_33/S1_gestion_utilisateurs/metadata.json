@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "llama_33",
+  "model_id": "meta-llama/llama-3.3-70b-instruct",
+  "scenario": "S1_gestion_utilisateurs",
+  "timestamp_utc": "2026-05-06T17:48:12.116257+00:00",
+  "elapsed_seconds": 89.45,
+  "tokens_input": 127,
+  "tokens_output": 2517,
+  "reasoning_tokens": 0,
+  "finish_reason": "stop",
+  "cost_usd_estimated": 0.000998,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": false,
+  "response_length_chars": 10795
+}

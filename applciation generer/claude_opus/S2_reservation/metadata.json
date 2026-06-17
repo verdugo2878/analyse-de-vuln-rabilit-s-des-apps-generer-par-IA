@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "claude_opus",
+  "model_id": "anthropic/claude-opus-4.7",
+  "scenario": "S2_reservation",
+  "timestamp_utc": "2026-05-06T17:09:47.160835+00:00",
+  "elapsed_seconds": 76.31,
+  "tokens_input": 166,
+  "tokens_output": 9934,
+  "reasoning_tokens": 0,
+  "finish_reason": "stop",
+  "cost_usd_estimated": 0.24918,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": false,
+  "response_length_chars": 24841
+}

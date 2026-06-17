@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tableau de bord</title>
+</head>
+<body>
+    <h1>Bienvenue, {{ current_user.username }}</h1>
+    <a href="{{ url_for('logout') }}">Déconnexion</a>
+
+    <h2>Statistiques</h2>
+    <ul>
+        <li>Total des employés : {{ nb_employees }}</li>
+        <li>Ventes totales : {{ nb_sales }}</li>
+        <li>Chiffre d'affaires total : {{ total_revenue }} €</li>
+        <li>Chiffre d'affaires ce mois-ci : {{ monthly_revenue }} €</li>
+    </ul>
+
+    <h2>Télécharger un fichier</h2>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Télécharger</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('employees') }}">Gérer les employés</a> |
+    <a href="{{ url_for('report') }}">Télécharger le rapport</a>
+</body>
+</html>

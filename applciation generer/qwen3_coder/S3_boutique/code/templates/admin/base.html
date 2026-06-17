@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Administration{% endblock %} - Boutique</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="{{ url_for('admin_dashboard') }}" class="logo">Admin Boutique</a>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Site public</a></li>
+                    <li><a href="{{ url_for('logout') }}">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="display: flex; gap: 30px; margin-top: 30px;">
+        <div style="flex: 1; max-width: 250px;">
+            <div class="admin-sidebar">
+                <h3>Navigation</h3>
+                <nav class="admin-nav">
+                    <ul>
+                        <li><a href="{{ url_for('admin_dashboard') }}" {% if request.endpoint == 'admin_dashboard' %}class="active"{% endif %}>Tableau de bord</a></li>
+                        <li><a href="{{ url_for('admin_products') }}" {% if 'product' in request.endpoint %}class="active"{% endif %}>Produits</a></li>
+                        <li><a href="{{ url_for('admin_orders') }}" {% if 'order' in request.endpoint %}class="active"{% endif %}>Commandes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div style="flex: 3;">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="flash-messages">
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }}">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+            
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>

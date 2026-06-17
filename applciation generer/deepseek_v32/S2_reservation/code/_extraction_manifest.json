@@ -1,0 +1,136 @@
+{
+  "n_blocks": 18,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 16,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 24,
+      "chars": 431
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "txt",
+      "source": "preceding_text",
+      "lines": 11,
+      "chars": 243
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 320,
+      "chars": 10879
+    },
+    {
+      "filename": "database.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 84,
+      "chars": 3160
+    },
+    {
+      "filename": "models.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 31,
+      "chars": 903
+    },
+    {
+      "filename": "static/css/style.css",
+      "lang": "css",
+      "source": "preceding_text",
+      "lines": 227,
+      "chars": 4016
+    },
+    {
+      "filename": "static/js/script.js",
+      "lang": "javascript",
+      "source": "preceding_text",
+      "lines": 108,
+      "chars": 4476
+    },
+    {
+      "filename": "base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 89,
+      "chars": 4689
+    },
+    {
+      "filename": "index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 52,
+      "chars": 2083
+    },
+    {
+      "filename": "login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 37,
+      "chars": 1570
+    },
+    {
+      "filename": "register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 38,
+      "chars": 1647
+    },
+    {
+      "filename": "rooms.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 41,
+      "chars": 1539
+    },
+    {
+      "filename": "book.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 75,
+      "chars": 3296
+    },
+    {
+      "filename": "my_bookings.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 68,
+      "chars": 2925
+    },
+    {
+      "filename": "admin_bookings.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 64,
+      "chars": 2753
+    },
+    {
+      "filename": "admin_rooms.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 65,
+      "chars": 2539
+    },
+    {
+      "filename": "add_room.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 52,
+      "chars": 2458
+    },
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 12,
+      "chars": 230
+    }
+  ]
+}

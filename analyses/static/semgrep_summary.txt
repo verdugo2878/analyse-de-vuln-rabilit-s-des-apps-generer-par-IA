@@ -1,0 +1,68 @@
+================================================================================
+SYNTHESE SEMGREP
+Configuration : p/owasp-top-ten, p/flask, p/xss
+================================================================================
+
+Modèle/Scénario                                Files  Total  ERR  WARN  INFO
+--------------------------------------------------------------------------------
+claude_opus/S1_gestion_utilisateurs               13      1    0     1     0
+claude_opus/S2_reservation                         0      0    0     0     0
+claude_opus/S3_boutique                           21      2    1     1     0
+claude_opus/S4_dashboard_admin                    11      4    2     2     0
+deepseek_v32/S1_gestion_utilisateurs              20      1    0     1     0
+deepseek_v32/S2_reservation                        0      0    0     0     0
+deepseek_v32/S3_boutique                          21      3    2     1     0
+deepseek_v32/S4_dashboard_admin                    0      0    0     0     0
+gemini3/S1_gestion_utilisateurs                    9      1    0     1     0
+gemini3/S2_reservation                            11      1    0     1     0
+gemini3/S3_boutique                               11      2    1     1     0
+gemini3/S4_dashboard_admin                         8      1    0     1     0
+gpt5/S1_gestion_utilisateurs                      12      1    0     1     0
+gpt5/S2_reservation                               10      0    0     0     0
+llama_33/S1_gestion_utilisateurs                   7      1    0     1     0
+llama_33/S2_reservation                            3      1    0     1     0
+llama_33/S3_boutique                              13      1    0     1     0
+llama_33/S4_dashboard_admin                       11      1    0     1     0
+qwen3_coder/S1_gestion_utilisateurs               15      1    0     1     0
+qwen3_coder/S2_reservation                         8      1    0     1     0
+qwen3_coder/S3_boutique                           24      0    0     0     0
+qwen3_coder/S4_dashboard_admin                     8      2    1     1     0
+
+================================================================================
+AGREGATION PAR MODELE
+================================================================================
+
+Modèle                  Files   Findings   ERR  WARN  INFO
+-----------------------------------------------------------------
+claude_opus                45          7     3     4     0
+deepseek_v32               41          4     2     2     0
+gemini3                    39          5     1     4     0
+gpt5                       22          1     0     1     0
+llama_33                   34          4     0     4     0
+qwen3_coder                55          4     1     3     0
+
+================================================================================
+TOP 15 DES REGLES SEMGREP LES PLUS DECLENCHEES
+================================================================================
+
+    17× debug-enabled
+        (python.flask.security.audit.debug-enabled.debug-enabled)
+     7× nan-injection
+        (python.flask.security.injection.nan-injection.nan-injection)
+     1× raw-html-format
+        (python.flask.security.injection.raw-html-concat.raw-html-format)
+
+================================================================================
+DISTRIBUTION OWASP
+================================================================================
+
+    17× A06:2017 - Security Misconfiguration
+     1× A07:2017 - Cross-Site Scripting (XSS); A03:2021 - Injection; A05:2025 - Injection
+
+================================================================================
+DISTRIBUTION CWE
+================================================================================
+
+    17× CWE-489: Active Debug Code
+     7× CWE-704: Incorrect Type Conversion or Cast
+     1× CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')

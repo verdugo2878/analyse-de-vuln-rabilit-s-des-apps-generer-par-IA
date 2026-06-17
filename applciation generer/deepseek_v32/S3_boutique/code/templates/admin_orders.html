@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Commandes - Admin{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Gestion des commandes</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>N° Commande</th>
+                <th>Client</th>
+                <th>Total</th>
+                <th>Statut</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+            <tr>
+                <td>#{{ order.id }}</td>
+                <td>
+                    {% set user = User.get(order.user_id) %}
+                    {{ user.email if user else 'Utilisateur supprimé' }}
+                </td>
+                <td>{{ order.total }} €</td>
+                <td>
+                    <span class="badge bg-{% if order.status == 'completed' %}success{% elif order.status == 'processing' %}warning{% elif order.status == 'cancelled' %}danger{% else %}info{% endif %}">
+                        {{ order.status }}
+                    </span>
+                </td>
+                <td>{{ order.created_at.strftime('%d/%m/%Y %H:%M') }}</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a href="{{ url_for('admin_order_detail', order_id=order.id) }}" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-eye"></i> Détails
+                        </a>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                                Statut
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" onclick="updateStatus({{ order.id }}, 'pending')">En attente</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="updateStatus({{ order.id }}, 'processing')">En traitement</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="updateStatus({{ order.id }}, 'completed')">Terminée</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="updateStatus({{ order.id }}, 'cancelled')">Annulée</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="mt-3">
+    <a href="{{ url_for('admin') }}" class="btn btn-outline-secondary">
+        <i class="fas fa-arrow-left"></i> Retour au tableau de bord
+    </a>
+</div>
+
+<script>
+function updateStatus(orderId, status) {
+    $.post('/admin/update_order_status/' + orderId, {
+        status: status
+    }, function(response) {
+        if (response.success) {
+            location.reload();
+        } else {
+            alert(response.message);
+        }
+    });
+}
+</script>
+{% endblock %}

@@ -1,0 +1,171 @@
+{
+  "n_blocks": 23,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 2,
+    "generated": 21
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 24,
+      "chars": 466
+    },
+    {
+      "filename": "orders.html",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 398,
+      "chars": 13403
+    },
+    {
+      "filename": "fragment_1.py",
+      "lang": "python",
+      "source": "generated",
+      "lines": 92,
+      "chars": 3073
+    },
+    {
+      "filename": "fragment_2.txt",
+      "lang": "txt",
+      "source": "generated",
+      "lines": 3,
+      "chars": 29
+    },
+    {
+      "filename": "fragment_1.css",
+      "lang": "css",
+      "source": "generated",
+      "lines": 434,
+      "chars": 6825
+    },
+    {
+      "filename": "fragment_1.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 51,
+      "chars": 2024
+    },
+    {
+      "filename": "fragment_2.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 25,
+      "chars": 1083
+    },
+    {
+      "filename": "fragment_3.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 32,
+      "chars": 1646
+    },
+    {
+      "filename": "fragment_4.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 59,
+      "chars": 2717
+    },
+    {
+      "filename": "fragment_5.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 73,
+      "chars": 3239
+    },
+    {
+      "filename": "fragment_6.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 29,
+      "chars": 1071
+    },
+    {
+      "filename": "fragment_7.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 37,
+      "chars": 1527
+    },
+    {
+      "filename": "fragment_8.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 35,
+      "chars": 1387
+    },
+    {
+      "filename": "fragment_9.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 43,
+      "chars": 1817
+    },
+    {
+      "filename": "fragment_10.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 52,
+      "chars": 2121
+    },
+    {
+      "filename": "fragment_11.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 28,
+      "chars": 804
+    },
+    {
+      "filename": "fragment_12.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 37,
+      "chars": 1939
+    },
+    {
+      "filename": "fragment_13.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 36,
+      "chars": 1396
+    },
+    {
+      "filename": "fragment_14.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 36,
+      "chars": 1504
+    },
+    {
+      "filename": "fragment_15.html",
+      "lang": "html",
+      "source": "generated",
+      "lines": 42,
+      "chars": 1512
+    },
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 3,
+      "chars": 83
+    },
+    {
+      "filename": "fragment_2.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 2,
+      "chars": 32
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "bash",
+      "source": "preceding_text",
+      "lines": 2,
+      "chars": 14
+    }
+  ]
+}

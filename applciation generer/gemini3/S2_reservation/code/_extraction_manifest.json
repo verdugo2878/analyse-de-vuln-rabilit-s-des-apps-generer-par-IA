@@ -1,0 +1,80 @@
+{
+  "n_blocks": 10,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 8,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 4,
+      "chars": 93
+    },
+    {
+      "filename": "fragment_1.txt",
+      "lang": "text",
+      "source": "generated",
+      "lines": 11,
+      "chars": 179
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 166,
+      "chars": 6518
+    },
+    {
+      "filename": "base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 40,
+      "chars": 1706
+    },
+    {
+      "filename": "index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 20,
+      "chars": 620
+    },
+    {
+      "filename": "login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 12,
+      "chars": 498
+    },
+    {
+      "filename": "register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 12,
+      "chars": 498
+    },
+    {
+      "filename": "book.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 11,
+      "chars": 619
+    },
+    {
+      "filename": "dashboard.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 20,
+      "chars": 931
+    },
+    {
+      "filename": "admin.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 32,
+      "chars": 1357
+    }
+  ]
+}

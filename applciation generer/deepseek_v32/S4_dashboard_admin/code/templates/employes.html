@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+{% block title %}Gestion des Employés{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                    <i class="bi bi-person-plus"></i> Ajouter un Employé
+                </h5>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('ajouter_employe') }}">
+                    <div class="mb-2">
+                        <label class="form-label">Nom</label>
+                        <input type="text" class="form-control form-control-sm" name="nom" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Prénom</label>
+                        <input type="text" class="form-control form-control-sm" name="prenom" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control form-control-sm" name="email" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Téléphone</label>
+                        <input type="tel" class="form-control form-control-sm" name="telephone">
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Poste</label>
+                        <input type="text" class="form-control form-control-sm" name="poste" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Date d'embauche</label>
+                        <input type="date" class="form-control form-control-sm" name="date_embauche" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Salaire (€)</label>
+                        <input type="number" step="0.01" class="form-control form-control-sm" name="salaire">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" name="actif" checked>
+                        <label class="form-check-label">Actif</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm w-100">
+                        <i class="bi bi-plus-circle"></i> Ajouter
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Liste des Employés</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Prénom</th>
+                                <th>Poste</th>
+                                <th>Email</th>
+                                <th>Salaire</th>
+                                <th>Statut</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for employe in employes %}
+                            <tr>
+                                <td>{{ employe.nom }}</td>
+                                <td>{{ employe.prenom }}</td>
+                                <td>{{ employe.poste }}</td>
+                                <td>{{ employe.email }}</td>
+                                <td>{{ "%.2f"|format(employe.salaire) if employe.salaire else 'N/A' }} €</td>
+                                <td>
+                                    <span class="badge bg-{{ 'success' if employe.actif else 'danger' }}">
+                                        {{ 'Actif' if employe.actif else 'Inactif' }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-warning" data-bs-toggle="modal" 
+                                            data-bs-target="#editModal{{ employe.id }}">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <a href="{{ url_for('supprimer_employe', id=employe.id) }}" 
+                                       class="btn btn-sm btn-danger"
+                                       onclick="return confirm('Supprimer cet employé ?')">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Modal d'édition -->
+                            <div class="modal fade" id="editModal{{ employe.id }}" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Modifier Employé</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <form method="POST" action="{{ url_for('modifier_employe', id=employe.id) }}">
+                                            <div class="modal-body">
+                                                <div class="mb-2">
+                                                    <label class="form-label">Nom</label>
+                                                    <input type="text" class="form-control" name="nom" 
+                                                           value="{{ employe.nom }}" required>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <label class="form-label">Prénom</label>
+                                                    <input type="text" class="form-control" name="prenom" 
+                                                           value="{{ employe.prenom }}" required>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <label class="form-label">Email</label>
+                                                    <input type="email" class="form-control" name="email" 
+                                                           value="{{ employe.email }}" required>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <label class="form-label">Téléphone</label>
+                                                    <input type="tel" class="form-control" name="telephone" 
+                                                           value="{{ employe.telephone or '' }}">
+                                                </div>
+                                                <div class="mb-2">
+                                                    <label class="form-label">Poste</label>
+                                                    <input type="text" class="form-control" name="poste" 
+                                                           value="{{ employe.poste }}" required>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <label class="form-label">Date d'embauche</label>
+                                                    <input type="date" class="form-control" name="date_embauche" 
+                                                           value="{{ employe.date_embauche }}" required>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <label class="form-label">Salaire (€)</label>
+                                                    <input type="number" step="0.01" class="form-control" name="salaire" 
+                                                           value="{{ employe.salaire or '' }}">
+                                                </div>
+                                                <div class="mb-2 form-check">
+                                                    <input type="checkbox" class="form-check-input" name="actif" 
+                                                           {{ 'checked' if employe.actif else '' }}>
+                                                    <label class="form-check-label">Actif</label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    Annuler
+                                                </button>
+                                                <button type="submit" class="btn btn-primary">
+                                                    Enregistrer
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

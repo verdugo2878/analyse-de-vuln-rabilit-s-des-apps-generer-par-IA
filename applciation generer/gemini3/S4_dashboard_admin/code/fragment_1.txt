@@ -1,0 +1,10 @@
+mon_dashboard/
+│
+├── app.py
+├── requirements.txt
+├── uploads/               (Crée ce dossier vide)
+└── templates/
+    ├── base.html
+    ├── login.html
+    ├── dashboard.html
+    └── employees.html

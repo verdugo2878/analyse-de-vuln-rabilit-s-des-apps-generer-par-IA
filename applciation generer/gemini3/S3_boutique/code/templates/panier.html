@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Mon Panier</h1>
+    <ul>
+    {% for item in produits %}
+        <li>{{ item.produit.name }} - {{ item.qte }}x - {{ item.produit.price * item.qte }} €</li>
+    {% endfor %}
+    </ul>
+    <h3>Total : {{ total }} €</h3>
+    <a href="/commander"><button>Passer la commande</button></a>
+{% endblock %}

@@ -1,0 +1,52 @@
+{
+  "n_blocks": 6,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 5,
+    "generated": 1
+  },
+  "files": [
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 2,
+      "chars": 57
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 174,
+      "chars": 6870
+    },
+    {
+      "filename": "inscription.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 18,
+      "chars": 558
+    },
+    {
+      "filename": "connexion.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 16,
+      "chars": 370
+    },
+    {
+      "filename": "profil.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 18,
+      "chars": 510
+    },
+    {
+      "filename": "admin.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 19,
+      "chars": 529
+    }
+  ]
+}

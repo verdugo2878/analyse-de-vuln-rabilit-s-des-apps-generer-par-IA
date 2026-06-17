@@ -1,0 +1,86 @@
+[
+  {
+    "label": "claude_opus/S3_boutique",
+    "port": 5101,
+    "ok": true,
+    "stages": {
+      "check_dir": "OK",
+      "entry": "app.py",
+      "venv": "venv déjà créé",
+      "deps": "deps installées",
+      "launcher": "créé",
+      "startup": "app répond sur http://127.0.0.1:5101"
+    },
+    "entry_file": "app.py",
+    "url": "http://127.0.0.1:5101"
+  },
+  {
+    "label": "gpt5/S2_reservation",
+    "port": 5102,
+    "ok": false,
+    "stages": {
+      "check_dir": "OK",
+      "entry": "aucun .py trouvé"
+    }
+  },
+  {
+    "label": "gemini3/S3_boutique",
+    "port": 5103,
+    "ok": true,
+    "stages": {
+      "check_dir": "OK",
+      "entry": "app.py",
+      "venv": "venv déjà créé",
+      "deps": "pas de requirements.txt, flask installé",
+      "launcher": "créé",
+      "startup": "app répond sur http://127.0.0.1:5103"
+    },
+    "entry_file": "app.py",
+    "url": "http://127.0.0.1:5103"
+  },
+  {
+    "label": "deepseek_v32/S3_boutique",
+    "port": 5104,
+    "ok": true,
+    "stages": {
+      "check_dir": "OK",
+      "entry": "app.py",
+      "venv": "venv déjà créé",
+      "deps": "deps installées",
+      "launcher": "créé",
+      "startup": "app répond sur http://127.0.0.1:5104"
+    },
+    "entry_file": "app.py",
+    "url": "http://127.0.0.1:5104"
+  },
+  {
+    "label": "qwen3_coder/S3_boutique",
+    "port": 5105,
+    "ok": true,
+    "stages": {
+      "check_dir": "OK",
+      "entry": "app.py",
+      "venv": "venv déjà créé",
+      "deps": "deps installées",
+      "launcher": "créé",
+      "startup": "app répond sur http://127.0.0.1:5105"
+    },
+    "entry_file": "app.py",
+    "url": "http://127.0.0.1:5105"
+  },
+  {
+    "label": "llama_33/S3_boutique",
+    "port": 5106,
+    "ok": true,
+    "stages": {
+      "check_dir": "OK",
+      "entry": "app.py",
+      "venv": "venv déjà créé",
+      "deps": "pas de requirements.txt, flask installé",
+      "launcher": "créé",
+      "startup": "app répond sur http://127.0.0.1:5106"
+    },
+    "entry_file": "app.py",
+    "url": "http://127.0.0.1:5106"
+  }
+]

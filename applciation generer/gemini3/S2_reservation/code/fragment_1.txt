@@ -1,0 +1,10 @@
+coworking_app/
+│── app.py
+└── templates/
+    ├── base.html
+    ├── index.html
+    ├── login.html
+    ├── register.html
+    ├── dashboard.html
+    ├── admin.html
+    └── book.html

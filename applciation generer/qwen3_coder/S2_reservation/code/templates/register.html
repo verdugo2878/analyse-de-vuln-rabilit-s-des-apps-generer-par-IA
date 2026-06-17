@@ -1,0 +1,11 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h2>Inscription</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {% for field in form if field.widget.input_type != 'hidden' and field.widget.input_type != 'submit' %}
+        <div class="mb-3">{{ field.label }} {{ field(class="form-control") }}</div>
+    {% endfor %}
+    <button type="submit" class="btn btn-primary">S'inscrire</button>
+</form>
+{% endblock %}

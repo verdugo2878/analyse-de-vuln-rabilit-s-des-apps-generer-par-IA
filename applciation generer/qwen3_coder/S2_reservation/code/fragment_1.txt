@@ -1,0 +1,17 @@
+coworking_app/
+│
+├── app.py
+├── models.py
+├── forms.py
+├── requirements.txt
+├── templates/
+│   ├── base.html
+│   ├── login.html
+│   ├── register.html
+│   ├── index.html
+│   ├── book_room.html
+│   ├── my_bookings.html
+│   ├── manage_rooms.html
+│   └── manage_bookings.html
+└── static/
+    └── style.css

@@ -1,0 +1,108 @@
+{
+  "n_blocks": 14,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 11,
+    "generated": 3
+  },
+  "files": [
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 2,
+      "chars": 67
+    },
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 17,
+      "chars": 339
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 147,
+      "chars": 5008
+    },
+    {
+      "filename": "models.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 18,
+      "chars": 627
+    },
+    {
+      "filename": "forms.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 28,
+      "chars": 1326
+    },
+    {
+      "filename": "templates/base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 45,
+      "chars": 1550
+    },
+    {
+      "filename": "templates/index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 10,
+      "chars": 292
+    },
+    {
+      "filename": "templates/register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 25,
+      "chars": 749
+    },
+    {
+      "filename": "templates/login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 17,
+      "chars": 465
+    },
+    {
+      "filename": "templates/profile.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 12,
+      "chars": 468
+    },
+    {
+      "filename": "templates/edit_profile.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 25,
+      "chars": 775
+    },
+    {
+      "filename": "templates/admin_dashboard.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 27,
+      "chars": 703
+    },
+    {
+      "filename": "templates/admin_edit_user.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 25,
+      "chars": 760
+    },
+    {
+      "filename": "fragment_2.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 2,
+      "chars": 14
+    }
+  ]
+}

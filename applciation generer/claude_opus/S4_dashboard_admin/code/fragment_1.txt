@@ -1,0 +1,13 @@
+admin_dashboard/
+├── app.py
+├── requirements.txt
+├── database.db (créé automatiquement)
+├── uploads/ (créé automatiquement)
+├── reports/ (créé automatiquement)
+└── templates/
+    ├── base.html
+    ├── login.html
+    ├── dashboard.html
+    ├── employees.html
+    ├── files.html
+    └── reports.html

@@ -1,0 +1,94 @@
+{
+  "n_blocks": 12,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 10,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 15,
+      "chars": 260
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "txt",
+      "source": "preceding_text",
+      "lines": 6,
+      "chars": 87
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 271,
+      "chars": 9489
+    },
+    {
+      "filename": "templates/base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 52,
+      "chars": 2324
+    },
+    {
+      "filename": "templates/index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 14,
+      "chars": 605
+    },
+    {
+      "filename": "templates/register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 35,
+      "chars": 1536
+    },
+    {
+      "filename": "templates/login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 27,
+      "chars": 1079
+    },
+    {
+      "filename": "templates/dashboard.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 16,
+      "chars": 593
+    },
+    {
+      "filename": "templates/profile.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 21,
+      "chars": 922
+    },
+    {
+      "filename": "templates/edit_profile.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 40,
+      "chars": 1960
+    },
+    {
+      "filename": "templates/admin.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 76,
+      "chars": 3821
+    },
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 17,
+      "chars": 414
+    }
+  ]
+}

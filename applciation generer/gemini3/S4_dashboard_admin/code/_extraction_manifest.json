@@ -1,0 +1,59 @@
+{
+  "n_blocks": 7,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 6,
+    "generated": 1
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "text",
+      "source": "generated",
+      "lines": 11,
+      "chars": 197
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "text",
+      "source": "preceding_text",
+      "lines": 5,
+      "chars": 72
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 160,
+      "chars": 5287
+    },
+    {
+      "filename": "base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 37,
+      "chars": 1403
+    },
+    {
+      "filename": "login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 24,
+      "chars": 902
+    },
+    {
+      "filename": "dashboard.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 55,
+      "chars": 1967
+    },
+    {
+      "filename": "employees.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 51,
+      "chars": 1669
+    }
+  ]
+}

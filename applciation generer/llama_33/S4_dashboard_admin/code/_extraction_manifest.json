@@ -1,0 +1,80 @@
+{
+  "n_blocks": 10,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 10,
+    "generated": 0
+  },
+  "files": [
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 121,
+      "chars": 4518
+    },
+    {
+      "filename": "models.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 18,
+      "chars": 664
+    },
+    {
+      "filename": "forms.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 25,
+      "chars": 1083
+    },
+    {
+      "filename": "templates/index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 12,
+      "chars": 328
+    },
+    {
+      "filename": "templates/login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 17,
+      "chars": 414
+    },
+    {
+      "filename": "templates/register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 19,
+      "chars": 538
+    },
+    {
+      "filename": "templates/dashboard.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 25,
+      "chars": 652
+    },
+    {
+      "filename": "templates/add_employee.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 16,
+      "chars": 326
+    },
+    {
+      "filename": "templates/upload_file.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 15,
+      "chars": 314
+    },
+    {
+      "filename": "templates/generate_report.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 23,
+      "chars": 511
+    }
+  ]
+}

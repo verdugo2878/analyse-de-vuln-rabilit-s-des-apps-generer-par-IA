@@ -1,0 +1,80 @@
+{
+  "n_blocks": 10,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 8,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 2,
+      "chars": 56
+    },
+    {
+      "filename": "fragment_1.txt",
+      "lang": "text",
+      "source": "generated",
+      "lines": 11,
+      "chars": 175
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 162,
+      "chars": 5686
+    },
+    {
+      "filename": "base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 23,
+      "chars": 709
+    },
+    {
+      "filename": "index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 11,
+      "chars": 323
+    },
+    {
+      "filename": "produit.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 11,
+      "chars": 345
+    },
+    {
+      "filename": "panier.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 12,
+      "chars": 351
+    },
+    {
+      "filename": "commande.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 12,
+      "chars": 416
+    },
+    {
+      "filename": "compte.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 10,
+      "chars": 275
+    },
+    {
+      "filename": "admin.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 28,
+      "chars": 819
+    }
+  ]
+}

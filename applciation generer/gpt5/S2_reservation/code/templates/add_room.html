@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Ajouter une salle</h1>
+<form method="post">
+  <label>Nom
+    <input type="text" name="name" required>
+  </label>
+  <label>Capacité
+    <input type="number" name="capacity" min="1" required>
+  </label>
+  <label>Description
+    <textarea name="description" rows="3"></textarea>
+  </label>
+  <button class="btn" type="submit">Ajouter</button>
+</form>
+{% endblock %}
+
+Fichier: static/style.css
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f6f7fb; color: #222; }
+.container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+.navbar { background: #1e293b; color: #fff; display: flex; gap: 1rem; padding: 1rem; }
+.navbar a { color: #fff; text-decoration: none; }
+.flashes { list-style: none; padding: 0; }
+.flash { padding: .5rem .75rem; margin: .5rem 0; border-radius: 4px; }
+.flash.success { background: #dcfce7; }
+.flash.danger { background: #fee2e2; }
+.flash.warning { background: #fef9c3; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1rem; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 1rem; }
+.card .btn { display: inline-block; margin-top: .5rem; }
+.btn { background: #2563eb; color: #fff; border: none; padding: .5rem .75rem; border-radius: 4px; cursor: pointer; text-decoration: none; }
+.btn-danger { background: #ef4444; }
+
+Notes techniques
+- Les horaires sont gérés en ISO local sans fuseau. Adaptez si besoin au fuseau spécifique.
+- Contrôle de chevauchement basique via is_room_available.
+- Statuts possibles: confirmed, cancelled.
+- Admin: accès aux routes /admin/*, annulation de toute réservation, ajout de salles.
+- Commandes utiles:
+  - flask --app app.py init-db
+  - flask --app app.py create-admin email name password
+
+Pour aller plus loin
+- Ajoutez des validations avancées (heures d’ouverture, durée max).
+- Ajoutez la modification/suppression de salles.
+- Ajoutez pagination/filtre par date.
+- Envoyez des emails de confirmation.
+- Protégez contre CSRF (Flask-WTF) si vous activez des formulaires plus sensibles. Ici, pour simplicité, le CSRF n’est pas activé.

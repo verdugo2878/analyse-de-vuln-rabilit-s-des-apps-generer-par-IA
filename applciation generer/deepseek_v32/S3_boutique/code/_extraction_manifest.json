@@ -1,0 +1,150 @@
+{
+  "n_blocks": 20,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 19,
+    "generated": 1
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 30,
+      "chars": 497
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "txt",
+      "source": "preceding_text",
+      "lines": 4,
+      "chars": 52
+    },
+    {
+      "filename": "database.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 28,
+      "chars": 562
+    },
+    {
+      "filename": "models.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 77,
+      "chars": 3028
+    },
+    {
+      "filename": "schema.sql",
+      "lang": "sql",
+      "source": "preceding_text",
+      "lines": 64,
+      "chars": 2396
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 492,
+      "chars": 16199
+    },
+    {
+      "filename": "base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 98,
+      "chars": 4354
+    },
+    {
+      "filename": "index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 69,
+      "chars": 2577
+    },
+    {
+      "filename": "product.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 86,
+      "chars": 2947
+    },
+    {
+      "filename": "cart.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 137,
+      "chars": 4857
+    },
+    {
+      "filename": "checkout.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 100,
+      "chars": 4490
+    },
+    {
+      "filename": "order_confirmation.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 40,
+      "chars": 1403
+    },
+    {
+      "filename": "login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 35,
+      "chars": 1354
+    },
+    {
+      "filename": "register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 39,
+      "chars": 1653
+    },
+    {
+      "filename": "account.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 74,
+      "chars": 3032
+    },
+    {
+      "filename": "admin.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 118,
+      "chars": 4565
+    },
+    {
+      "filename": "admin_products.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 67,
+      "chars": 2457
+    },
+    {
+      "filename": "admin_add_product.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 55,
+      "chars": 2596
+    },
+    {
+      "filename": "admin_orders.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 79,
+      "chars": 3081
+    },
+    {
+      "filename": "admin_order_detail.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 89,
+      "chars": 3235
+    }
+  ]
+}

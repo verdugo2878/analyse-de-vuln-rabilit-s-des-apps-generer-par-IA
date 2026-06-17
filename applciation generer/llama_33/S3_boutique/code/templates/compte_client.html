@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Compte client</h1>
+  <ul>
+    {% for commande in commandes %}
+      <li>
+        <a href="{{ url_for('commande', id=commande.id) }}">{{ commande.date }} - {{ commande.total }} €</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

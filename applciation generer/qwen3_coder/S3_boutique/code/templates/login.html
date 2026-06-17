@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Confirmation de commande - Boutique en Ligne{% endblock %}
+
+{% block content %}
+    <div class="order-confirmation">
+        <h1>Merci pour votre commande!</h1>
+        <div style="font-size: 4rem; color: #27ae60; margin: 20px 0;">✓</div>
+        <p>Votre commande a été enregistrée avec succès.</p>
+        
+        <div class="order-number">
+            Numéro de commande : #{{ order.id }}
+        </div>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 30px 0;">
+            <h3>Détails de la commande</h3>
+            <p><strong>Date :</strong> {{ order.created_at }}</p>
+            <p><strong>Total :</strong> {{ "%.2f"|format(order.total_amount) }} €</p>
+            <p><strong>Statut :</strong> 
+                <span class="status-confirmed">Confirmée</span>
+            </p>
+        </div>
+        
+        <a href="{{ url_for('account') }}" class="btn" style="padding: 15px 30px; font-size: 1.1rem;">
+            Voir mes commandes
+        </a>
+    </div>
+{% endblock %}

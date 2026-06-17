@@ -1,0 +1,94 @@
+{
+  "n_blocks": 12,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 11,
+    "generated": 1
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "markdown",
+      "source": "generated",
+      "lines": 19,
+      "chars": 228
+    },
+    {
+      "filename": "schema.sql",
+      "lang": "bash",
+      "source": "preceding_text",
+      "lines": 36,
+      "chars": 839
+    },
+    {
+      "filename": "models.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 31,
+      "chars": 1230
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 80,
+      "chars": 2925
+    },
+    {
+      "filename": "accueil.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 13,
+      "chars": 256
+    },
+    {
+      "filename": "fiche_produit.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 10,
+      "chars": 258
+    },
+    {
+      "filename": "panier.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 10,
+      "chars": 200
+    },
+    {
+      "filename": "commande.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 12,
+      "chars": 269
+    },
+    {
+      "filename": "compte_client.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 13,
+      "chars": 287
+    },
+    {
+      "filename": "admin/produits.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 13,
+      "chars": 242
+    },
+    {
+      "filename": "admin/stocks.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 13,
+      "chars": 217
+    },
+    {
+      "filename": "admin/commandes.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 13,
+      "chars": 227
+    }
+  ]
+}

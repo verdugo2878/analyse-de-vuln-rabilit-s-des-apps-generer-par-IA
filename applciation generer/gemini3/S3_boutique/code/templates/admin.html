@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Panneau d'Administration</h1>
+    
+    <h3>Ajouter un produit</h3>
+    <form method="post">
+        Nom: <input type="text" name="name" required><br>
+        Desc: <textarea name="description" required></textarea><br>
+        Prix: <input type="number" step="0.01" name="price" required><br>
+        Stock: <input type="number" name="stock" required><br>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <h3>Gestion des stocks</h3>
+    <ul>
+    {% for p in produits %}
+        <li>{{ p.name }} - Stock: {{ p.stock }}</li>
+    {% endfor %}
+    </ul>
+
+    <h3>Toutes les commandes</h3>
+    <ul>
+    {% for c in commandes %}
+        <li>Cmd #{{ c.id }} - Client ID: {{ c.user_id }} - Total: {{ c.total }}€</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

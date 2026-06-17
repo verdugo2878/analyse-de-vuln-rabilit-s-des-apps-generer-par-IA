@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow">
+    <div class="card-body">
+        <h2>Bonjour, {{ current_user.name }} 👋</h2>
+        <p>Bienvenue sur votre tableau de bord.</p>
+        <hr>
+        <a href="{{ url_for('profile') }}" class="btn btn-primary">Voir mon profil</a>
+        <a href="{{ url_for('edit_profile') }}" class="btn btn-outline-primary">Modifier mon profil</a>
+        {% if current_user.role == 'admin' %}
+            <a href="{{ url_for('admin') }}" class="btn btn-warning">Espace Admin</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

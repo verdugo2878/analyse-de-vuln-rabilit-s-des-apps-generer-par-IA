@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ room.name }}</h1>
+<p>Capacité: {{ room.capacity }}</p>
+<p>{{ room.description }}</p>
+
+<h2>Réserver cette salle</h2>
+<form method="post" class="booking-form">
+  <label>Date
+    <input type="date" name="date" required value="{{ request.args.get('date','') }}">
+  </label>
+  <label>Heure de début
+    <input type="time" name="start_time" required step="900" value="{{ request.args.get('start','') }}">
+  </label>
+  <label>Heure de fin
+    <input type="time" name="end_time" required step="900" value="{{ request.args.get('end','') }}">
+  </label>
+  <button class="btn" type="submit">Réserver</button>
+</form>
+
+{% if upcoming %}
+<h2>Créneaux déjà réservés (prochains)</h2>
+<ul>
+  {% for b in upcoming %}
+    <li>{{ b.start_datetime }} → {{ b.end_datetime }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}

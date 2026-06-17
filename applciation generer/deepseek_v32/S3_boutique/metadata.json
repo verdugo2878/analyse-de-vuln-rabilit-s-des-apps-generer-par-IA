@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "deepseek_v32",
+  "model_id": "deepseek/deepseek-v3.2",
+  "scenario": "S3_boutique",
+  "timestamp_utc": "2026-05-06T17:29:09.626545+00:00",
+  "elapsed_seconds": 466.08,
+  "tokens_input": 114,
+  "tokens_output": 16000,
+  "reasoning_tokens": 0,
+  "finish_reason": "length",
+  "cost_usd_estimated": 0.017631,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": false,
+  "response_length_chars": 68834
+}

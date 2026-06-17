@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil - Ma Boutique{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1>Nos Produits</h1>
+        <p class="lead">Découvrez notre sélection exclusive</p>
+    </div>
+</div>
+
+<div class="row">
+    {% for product in products %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            {% if product.image_url %}
+            <img src="{{ product.image_url }}" class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
+            {% else %}
+            <div class="card-img-top bg-secondary d-flex align-items-center justify-content-center" style="height: 200px;">
+                <i class="fas fa-image fa-3x text-white"></i>
+            </div>
+            {% endif %}
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description[:100] }}{% if product.description|length > 100 %}...{% endif %}</p>
+                <div class="mt-auto">
+                    <p class="card-text"><strong>{{ product.price }} €</strong></p>
+                    <p class="card-text">
+                        <small class="text-{% if product.stock > 10 %}success{% elif product.stock > 0 %}warning{% else %}danger{% endif %}">
+                            Stock: {{ product.stock }}
+                        </small>
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="{{ url_for('product_detail', product_id=product.id) }}" class="btn btn-outline-primary flex-grow-1">
+                            <i class="fas fa-eye"></i> Voir
+                        </a>
+                        <button class="btn btn-primary add-to-cart" data-product-id="{{ product.id }}">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+$(document).ready(function() {
+    $('.add-to-cart').click(function() {
+        const productId = $(this).data('product-id');
+        
+        $.post('/add_to_cart', {
+            product_id: productId,
+            quantity: 1
+        }, function(response) {
+            if (response.success) {
+                alert('Produit ajouté au panier !');
+                updateCartCount();
+            } else {
+                alert(response.message);
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

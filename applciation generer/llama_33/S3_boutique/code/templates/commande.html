@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Commande</h1>
+  <form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.adresse.label }} {{ form.adresse() }}
+    {{ form.paiement.label }} {{ form.paiement() }}
+    {{ form.submit() }}
+  </form>
+{% endblock %}

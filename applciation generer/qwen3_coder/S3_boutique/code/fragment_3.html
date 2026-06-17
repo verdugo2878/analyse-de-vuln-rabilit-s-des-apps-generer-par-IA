@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}{{ product.name }} - Boutique en Ligne{% endblock %}
+
+{% block content %}
+    <div class="product-details" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <div class="product-image" style="height: 400px; font-size: 5rem;">📦</div>
+            </div>
+            <div style="flex: 2; min-width: 300px;">
+                <h1>{{ product.name }}</h1>
+                <p style="font-size: 1.2rem; margin: 20px 0; line-height: 1.6;">{{ product.description }}</p>
+                <div style="font-size: 2rem; color: #e74c3c; font-weight: bold; margin: 20px 0;">
+                    {{ "%.2f"|format(product.price) }} €
+                </div>
+                <div style="margin: 20px 0;">
+                    {% if product.stock > 0 %}
+                        <span style="color: #27ae60;">En stock ({{ product.stock }} disponibles)</span>
+                    {% else %}
+                        <span style="color: #e74c3c;">Rupture de stock</span>
+                    {% endif %}
+                </div>
+                {% if product.stock > 0 %}
+                    <a href="{{ url_for('add_to_cart', product_id=product.id) }}" class="btn btn-success" style="padding: 15px 30px; font-size: 1.1rem;">Ajouter au panier</a>
+                {% endif %}
+                <a href="{{ url_for('index') }}" class="btn" style="margin-left: 10px;">Retour aux produits</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

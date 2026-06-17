@@ -1,0 +1,11 @@
+mon_tableau_de_bord/
+│
+├── app.py
+├── database.db
+├── templates/
+│   ├── login.html
+│   ├── dashboard.html
+│   └── employees.html
+├── static/
+│   └── uploads/
+└── requirements.txt

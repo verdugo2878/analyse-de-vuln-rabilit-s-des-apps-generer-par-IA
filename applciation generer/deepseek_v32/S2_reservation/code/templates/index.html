@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil - Coworking Space{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Bienvenue au Coworking Space</h1>
+    <p class="lead">Réservez facilement vos salles de réunion et espaces de travail</p>
+    {% if not current_user.is_authenticated %}
+        <div class="mt-4">
+            <a href="{{ url_for('register') }}" class="btn btn-light btn-lg me-3">Créer un compte</a>
+            <a href="{{ url_for('rooms') }}" class="btn btn-outline-light btn-lg">Voir les salles</a>
+        </div>
+    {% else %}
+        <div class="mt-4">
+            <a href="{{ url_for('rooms') }}" class="btn btn-light btn-lg me-3">Réserver une salle</a>
+            <a href="{{ url_for('my_bookings') }}" class="btn btn-outline-light btn-lg">Mes réservations</a>
+        </div>
+    {% endif %}
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <i class="fas fa-search fa-3x text-primary mb-3"></i>
+                <h3 class="card-title">Trouvez</h3>
+                <p class="card-text">Parcourez nos salles disponibles et choisissez celle qui correspond à vos besoins.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <i class="fas fa-calendar-check fa-3x text-primary mb-3"></i>
+                <h3 class="card-title">Réservez</h3>
+                <p class="card-text">Sélectionnez la date et l'heure qui vous conviennent en quelques clics.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                <h3 class="card-title">Collaborez</h3>
+                <p class="card-text">Travaillez efficacement dans des espaces conçus pour la productivité.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

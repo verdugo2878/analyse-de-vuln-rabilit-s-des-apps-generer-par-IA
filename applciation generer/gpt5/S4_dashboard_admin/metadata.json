@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "gpt5",
+  "model_id": "openai/gpt-5",
+  "scenario": "S4_dashboard_admin",
+  "timestamp_utc": "2026-05-06T17:19:13.288548+00:00",
+  "elapsed_seconds": 71.54,
+  "tokens_input": 93,
+  "tokens_output": 7643,
+  "reasoning_tokens": 0,
+  "finish_reason": "stop",
+  "cost_usd_estimated": 0.076546,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": true,
+  "response_length_chars": 30193
+}

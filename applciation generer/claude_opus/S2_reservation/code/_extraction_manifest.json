@@ -1,0 +1,94 @@
+{
+  "n_blocks": 12,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 10,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 13,
+      "chars": 234
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "",
+      "source": "preceding_text",
+      "lines": 3,
+      "chars": 29
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 313,
+      "chars": 10999
+    },
+    {
+      "filename": "templates/base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 50,
+      "chars": 2228
+    },
+    {
+      "filename": "templates/index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 22,
+      "chars": 782
+    },
+    {
+      "filename": "templates/login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 27,
+      "chars": 1136
+    },
+    {
+      "filename": "templates/register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 29,
+      "chars": 1152
+    },
+    {
+      "filename": "templates/reserver.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 46,
+      "chars": 1827
+    },
+    {
+      "filename": "templates/mes_reservations.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 59,
+      "chars": 1731
+    },
+    {
+      "filename": "templates/admin.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 65,
+      "chars": 2169
+    },
+    {
+      "filename": "templates/ajouter_salle.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 30,
+      "chars": 1244
+    },
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 3,
+      "chars": 46
+    }
+  ]
+}

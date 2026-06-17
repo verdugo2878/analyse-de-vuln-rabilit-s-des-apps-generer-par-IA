@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Salles disponibles{% endblock %}
+{% block content %}
+<h1 class="mb-4">Nos salles</h1>
+<div class="row">
+    {% for salle in salles %}
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">{{ salle.nom }}</h5>
+                <p class="card-text"><strong>Capacité :</strong> {{ salle.capacite }} personnes</p>
+                <p class="card-text text-muted">{{ salle.description or '' }}</p>
+                <a href="{{ url_for('reserver', salle_id=salle.id) }}" class="btn btn-primary">Réserver</a>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <p>Aucune salle disponible pour le moment.</p>
+    {% endfor %}
+</div>
+{% endblock %}

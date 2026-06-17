@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}Mes réservations{% endblock %}
+{% block content %}
+<h1 class="mb-4">Mes réservations</h1>
+
+<h4>À venir</h4>
+{% if futures %}
+<table class="table table-striped">
+    <thead><tr><th>Salle</th><th>Date</th><th>Début</th><th>Fin</th><th>Statut</th><th>Action</th></tr></thead>
+    <tbody>
+    {% for r in futures %}
+    <tr>
+        <td>{{ r.salle_nom }}</td>
+        <td>{{ r.date }}</td>
+        <td>{{ r.heure_debut }}</td>
+        <td>{{ r.heure_fin }}</td>
+        <td>
+            {% if r.statut == 'active' %}
+                <span class="badge bg-success">Active</span>
+            {% else %}
+                <span class="badge bg-secondary">Annulée</span>
+            {% endif %}
+        </td>
+        <td>
+            {% if r.statut == 'active' %}
+            <form method="POST" action="{{ url_for('annuler', reservation_id=r.id) }}" onsubmit="return confirm('Annuler cette réservation ?');">
+                <button class="btn btn-sm btn-danger">Annuler</button>
+            </form>
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p class="text-muted">Aucune réservation à venir.</p>
+{% endif %}
+
+<h4 class="mt-4">Passées</h4>
+{% if passees %}
+<table class="table table-sm">
+    <thead><tr><th>Salle</th><th>Date</th><th>Début</th><th>Fin</th><th>Statut</th></tr></thead>
+    <tbody>
+    {% for r in passees %}
+    <tr>
+        <td>{{ r.salle_nom }}</td>
+        <td>{{ r.date }}</td>
+        <td>{{ r.heure_debut }}</td>
+        <td>{{ r.heure_fin }}</td>
+        <td>{{ r.statut }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p class="text-muted">Aucune réservation passée.</p>
+{% endif %}
+{% endblock %}

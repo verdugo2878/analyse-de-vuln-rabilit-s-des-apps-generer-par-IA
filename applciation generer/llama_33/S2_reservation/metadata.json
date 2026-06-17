@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "llama_33",
+  "model_id": "meta-llama/llama-3.3-70b-instruct",
+  "scenario": "S2_reservation",
+  "timestamp_utc": "2026-05-06T17:49:43.572385+00:00",
+  "elapsed_seconds": 36.24,
+  "tokens_input": 132,
+  "tokens_output": 1596,
+  "reasoning_tokens": 0,
+  "finish_reason": "stop",
+  "cost_usd_estimated": 0.00064,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": false,
+  "response_length_chars": 7215
+}

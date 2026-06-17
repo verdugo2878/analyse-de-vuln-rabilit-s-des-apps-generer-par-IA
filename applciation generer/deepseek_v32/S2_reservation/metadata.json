@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "deepseek_v32",
+  "model_id": "deepseek/deepseek-v3.2",
+  "scenario": "S2_reservation",
+  "timestamp_utc": "2026-05-06T17:23:09.326316+00:00",
+  "elapsed_seconds": 358.27,
+  "tokens_input": 112,
+  "tokens_output": 12605,
+  "reasoning_tokens": 0,
+  "finish_reason": "stop",
+  "cost_usd_estimated": 0.013896,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": false,
+  "response_length_chars": 52469
+}

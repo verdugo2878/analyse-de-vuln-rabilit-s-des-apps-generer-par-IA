@@ -1,0 +1,9 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h2>Gérer les salles</h2>
+<ul class="list-group">
+{% for room in rooms %}
+    <li class="list-group-item">{{ room.name }} - Capacité: {{ room.capacity }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

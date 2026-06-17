@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "model_label": "gemini3",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "scenario": "S2_reservation",
+  "timestamp_utc": "2026-05-06T17:21:08.243167+00:00",
+  "elapsed_seconds": 41.74,
+  "tokens_input": 87,
+  "tokens_output": 5586,
+  "reasoning_tokens": 1308,
+  "finish_reason": "stop",
+  "cost_usd_estimated": 0.067206,
+  "temperature": 0.7,
+  "max_tokens_param": 16000,
+  "reasoning_minimal": true,
+  "response_length_chars": 14423
+}

@@ -1,0 +1,143 @@
+{
+  "n_blocks": 19,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 16,
+    "generated": 3
+  },
+  "files": [
+    {
+      "filename": "fragment_1.txt",
+      "lang": "",
+      "source": "generated",
+      "lines": 21,
+      "chars": 380
+    },
+    {
+      "filename": "requirements.txt",
+      "lang": "txt",
+      "source": "preceding_text",
+      "lines": 12,
+      "chars": 205
+    },
+    {
+      "filename": "config.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 22,
+      "chars": 739
+    },
+    {
+      "filename": "database.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 4,
+      "chars": 59
+    },
+    {
+      "filename": "models.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 38,
+      "chars": 1515
+    },
+    {
+      "filename": "forms.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 89,
+      "chars": 4050
+    },
+    {
+      "filename": "app.py",
+      "lang": "python",
+      "source": "preceding_text",
+      "lines": 253,
+      "chars": 8008
+    },
+    {
+      "filename": "templates/base.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 80,
+      "chars": 3618
+    },
+    {
+      "filename": "templates/index.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 77,
+      "chars": 3575
+    },
+    {
+      "filename": "templates/register.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 69,
+      "chars": 3199
+    },
+    {
+      "filename": "templates/login.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 50,
+      "chars": 2065
+    },
+    {
+      "filename": "templates/profile.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 101,
+      "chars": 4837
+    },
+    {
+      "filename": "templates/admin.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 109,
+      "chars": 4860
+    },
+    {
+      "filename": "templates/admin_users.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 77,
+      "chars": 3581
+    },
+    {
+      "filename": "templates/admin_edit_user.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 89,
+      "chars": 4257
+    },
+    {
+      "filename": "templates/error.html",
+      "lang": "html",
+      "source": "preceding_text",
+      "lines": 28,
+      "chars": 1043
+    },
+    {
+      "filename": "static/css/style.css",
+      "lang": "css",
+      "source": "preceding_text",
+      "lines": 94,
+      "chars": 1395
+    },
+    {
+      "filename": "fragment_1.py",
+      "lang": "python",
+      "source": "generated",
+      "lines": 15,
+      "chars": 481
+    },
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 2,
+      "chars": 32
+    }
+  ]
+}

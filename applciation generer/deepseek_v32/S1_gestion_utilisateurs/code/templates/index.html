@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="display-4 mb-4">Bienvenue sur UserManager</h1>
+        <p class="lead mb-4">Une plateforme complète pour gérer les utilisateurs de votre application.</p>
+        
+        {% if not current_user.is_authenticated %}
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Commencez dès maintenant</h5>
+                    <p class="card-text">Inscrivez-vous gratuitement pour accéder à toutes les fonctionnalités.</p>
+                    <div class="mt-4">
+                        <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg me-3">
+                            <i class="bi bi-person-plus"></i> S'inscrire
+                        </a>
+                        <a href="{{ url_for('login') }}" class="btn btn-outline-primary btn-lg">
+                            <i class="bi bi-box-arrow-in-right"></i> Se connecter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Bienvenue, {{ current_user.username }}!</h5>
+                    <p class="card-text">Vous êtes maintenant connecté à votre compte.</p>
+                    <div class="mt-4">
+                        <a href="{{ url_for('profile') }}" class="btn btn-primary btn-lg me-3">
+                            <i class="bi bi-person-circle"></i> Voir mon profil
+                        </a>
+                        {% if current_user.is_admin() %}
+                            <a href="{{ url_for('admin') }}" class="btn btn-success btn-lg">
+                                <i class="bi bi-shield-lock"></i> Espace administrateur
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-person-check display-4 text-primary mb-3"></i>
+                        <h5 class="card-title">Gestion de profil</h5>
+                        <p class="card-text">Modifiez vos informations personnelles, photo de profil et bio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-shield-lock display-4 text-primary mb-3"></i>
+                        <h5 class="card-title">Sécurité</h5>
+                        <p class="card-text">Authentification sécurisée avec hachage de mot de passe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-people display-4 text-primary mb-3"></i>
+                        <h5 class="card-title">Administration</h5>
+                        <p class="card-text">Gérez tous les utilisateurs depuis l'espace administrateur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

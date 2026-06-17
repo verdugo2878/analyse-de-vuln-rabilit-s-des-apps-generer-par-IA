@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}Fichiers{% endblock %}
+{% block content %}
+<h2 class="mb-4">Gestion des fichiers</h2>
+
+<div class="card mb-4">
+    <div class="card-header"><b>Téléverser un fichier</b> (PDF, PNG, JPG, JPEG, GIF - max 16 Mo)</div>
+    <div class="card-body">
+        <form method="POST" action="{{ url_for('upload_file') }}" enctype="multipart/form-data" class="d-flex gap-2">
+            <input type="file" name="file" class="form-control" required>
+            <button type="submit" class="btn btn-primary"><i class="bi bi-upload"></i> Téléverser</button>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header"><b>Fichiers téléversés</b></div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr><th>Nom</th><th>Type</th><th>Date</th><th>Par</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+                {% for f in files %}
+                <tr>
+                    <td>
+                        {% if f.file_type == 'PDF' %}<i class="bi bi-file-earmark-pdf text-danger"></i>
+                        {% else %}<i class="bi bi-file-earmark-image text-info"></i>{% endif %}
+                        {{ f.original_name }}
+                    </td>
+                    <td><span class="badge bg-secondary">{{ f.file_type }}</span></td>
+                    <td>{{ f.uploaded_at }}</td>
+                    <td>{{ f.uploaded_by }}</td>
+                    <td>
+                        <a href="{{ url_for('download_file', file_id=f.id) }}" class="btn btn-sm btn-success">
+                            <i class="bi bi-download"></i>
+                        </a>
+                        <form method="POST" action="{{ url_for('delete_file', file_id=f.id) }}" class="d-inline"
+                              onsubmit="return confirm('Supprimer ce fichier ?');">
+                            <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+                        </form>
+                    </td>
+                </tr>
+                {% else %}
+                <tr><td colspan="5" class="text-center text-muted">Aucun fichier</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

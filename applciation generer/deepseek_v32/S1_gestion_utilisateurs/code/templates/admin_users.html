@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Gestion des Utilisateurs{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1><i class="bi bi-people"></i> Gestion des Utilisateurs</h1>
+            <a href="{{ url_for('admin') }}" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-left"></i> Retour
+            </a>
+        </div>
+        
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Liste des utilisateurs</h5>
+                <span class="badge bg-light text-primary">{{ users|length }} utilisateurs</span>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Photo</th>
+                                <th>Nom d'utilisateur</th>
+                                <th>Email</th>
+                                <th>Nom complet</th>
+                                <th>Rôle</th>
+                                <th>Statut</th>
+                                <th>Inscription</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for user in users %}
+                            <tr>
+                                <td>{{ user.id }}</td>
+                                <td>
+                                    <img src="{{ user.get_profile_picture_url() }}" 
+                                         alt="Photo" 
+                                         class="rounded-circle" 
+                                         style="width: 40px; height: 40px; object-fit: cover;">
+                                </td>
+                                <td>{{ user.username }}</td>
+                                <td>{{ user.email }}</td>
+                                <td>{{ user.full_name or '-' }}</td>
+                                <td>
+                                    <span class="badge bg-{{ 'warning' if user.role == 'admin' else 'primary' }}">
+                                        {{ user.role }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="badge bg-{{ 'success' if user.is_active else 'danger' }}">
+                                        {{ 'Actif' if user.is_active else 'Inactif' }}
+                                    </span>
+                                </td>
+                                <td>{{ user.created_at.strftime('%d/%m/%Y') }}</td>
+                                <td>
+                                    <a href="{{ url_for('admin_edit_user', user_id=user.id) }}" 
+                                       class="btn btn-sm btn-outline-primary" 
+                                       title="Modifier">
+                                        <i class="bi bi-pencil"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

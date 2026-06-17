@@ -1,0 +1,61 @@
+{
+  "extractor": "gpt5_dedicated",
+  "n_files": 11,
+  "files": [
+    {
+      "filename": "requirements.txt",
+      "lines": 7,
+      "chars": 124
+    },
+    {
+      "filename": "app.py",
+      "lines": 384,
+      "chars": 15660
+    },
+    {
+      "filename": "templates/layout.html",
+      "lines": 36,
+      "chars": 1155
+    },
+    {
+      "filename": "templates/index.html",
+      "lines": 5,
+      "chars": 183
+    },
+    {
+      "filename": "templates/auth_register.html",
+      "lines": 24,
+      "chars": 864
+    },
+    {
+      "filename": "templates/auth_login.html",
+      "lines": 19,
+      "chars": 607
+    },
+    {
+      "filename": "templates/profile.html",
+      "lines": 19,
+      "chars": 742
+    },
+    {
+      "filename": "templates/profile_edit.html",
+      "lines": 25,
+      "chars": 960
+    },
+    {
+      "filename": "templates/admin_dashboard.html",
+      "lines": 34,
+      "chars": 1128
+    },
+    {
+      "filename": "templates/admin_user_edit.html",
+      "lines": 26,
+      "chars": 879
+    },
+    {
+      "filename": "static/style.css",
+      "lines": 30,
+      "chars": 1993
+    }
+  ]
+}

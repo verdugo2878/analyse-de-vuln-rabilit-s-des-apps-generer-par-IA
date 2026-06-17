@@ -1,0 +1,13 @@
+﻿venv/
+env/
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.zip
+*.tar
+*.tar.gz
+*.session
+*.session.lck
+.env
+instance/

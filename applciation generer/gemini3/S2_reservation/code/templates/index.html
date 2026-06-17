@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Salles disponibles</h2>
+<div class="row mt-3">
+    {% for room in rooms %}
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ room.name }}</h5>
+                <p class="card-text">Capacité : {{ room.capacity }} personnes</p>
+                <a href="{{ url_for('book', room_id=room.id) }}" class="btn btn-primary">Réserver</a>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <p>Aucune salle n'est disponible pour le moment.</p>
+    {% endfor %}
+</div>
+{% endblock %}

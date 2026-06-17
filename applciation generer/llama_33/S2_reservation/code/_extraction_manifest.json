@@ -1,0 +1,24 @@
+{
+  "n_blocks": 2,
+  "by_source": {
+    "in_block": 0,
+    "preceding_text": 0,
+    "generated": 2
+  },
+  "files": [
+    {
+      "filename": "fragment_1.sh",
+      "lang": "bash",
+      "source": "generated",
+      "lines": 2,
+      "chars": 47
+    },
+    {
+      "filename": "fragment_1.py",
+      "lang": "python",
+      "source": "generated",
+      "lines": 145,
+      "chars": 5389
+    }
+  ]
+}

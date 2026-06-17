@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Boutique{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Accueil</a> |
+        <a href="/panier">Panier</a> |
+        <a href="/compte">Compte</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
